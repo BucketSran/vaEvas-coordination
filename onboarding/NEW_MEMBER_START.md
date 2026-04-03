@@ -13,9 +13,9 @@
 
 ## 阅读顺序
 
-1. [README.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/README.md)
-2. [QUICK_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/QUICK_START.md)
-3. [AI_PROMPT_STARTER.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/AI_PROMPT_STARTER.md)
+1. [00_START_HERE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/00_START_HERE.md)
+2. [README.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/README.md)
+3. [QUICK_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/QUICK_START.md)
 4. [VIRTUOSO_EVAS_TEAM_GUIDE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/VIRTUOSO_EVAS_TEAM_GUIDE.md)
 5. [ONBOARDING_CHECKLIST_TEAM.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/ONBOARDING_CHECKLIST_TEAM.md)
 6. [SSH_TUNNEL_DAEMON_RUNBOOK.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/SSH_TUNNEL_DAEMON_RUNBOOK.md)

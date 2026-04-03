@@ -61,7 +61,12 @@
 
 如果你是第一次接触这个项目，而且很多操作会依赖 AI，建议不要直接跳进所有文档。
 
-先按这个顺序：
+先看编号入口（推荐）：
+
+1. [docs/00_DOC_MAP.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/00_DOC_MAP.md)
+2. [onboarding/00_START_HERE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/00_START_HERE.md)
+
+再按细化顺序阅读：
 
 1. [onboarding/QUICK_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/QUICK_START.md)
    先看 5 分钟启动版，知道第一天到底做什么。
