@@ -67,12 +67,14 @@
    先看 5 分钟启动版，知道第一天到底做什么。
 2. [onboarding/AI_PROMPT_STARTER.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/AI_PROMPT_STARTER.md)
    直接复制 prompt 给 AI，减少自己理解成本。
-3. [onboarding/NEW_MEMBER_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/NEW_MEMBER_START.md)
+3. [onboarding/VIRTUOSO_EVAS_TEAM_GUIDE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/VIRTUOSO_EVAS_TEAM_GUIDE.md)
+   新成员 Virtuoso 连接、最小概念和双验证执行手册。
+4. [onboarding/NEW_MEMBER_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/NEW_MEMBER_START.md)
    看完整的新成员接入路径。
-4. [docs/PROJECT_OVERVIEW.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/PROJECT_OVERVIEW.md)
-5. [docs/REPOSITORIES.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/REPOSITORIES.md)
-6. [docs/DAILY_SYNC.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/DAILY_SYNC.md)
-7. [docs/COMMUNICATION_PACK.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/COMMUNICATION_PACK.md)
+5. [docs/PROJECT_OVERVIEW.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/PROJECT_OVERVIEW.md)
+6. [docs/REPOSITORIES.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/REPOSITORIES.md)
+7. [docs/DAILY_SYNC.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/DAILY_SYNC.md)
+8. [docs/COMMUNICATION_PACK.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/COMMUNICATION_PACK.md)
 
 ## 如果你主要依赖 AI
 
@@ -130,3 +132,9 @@
    风险清单和处理记录。
 5. `onboarding/`
    新成员接入材料。
+
+## 仅上传 coordination 时
+
+如果你只上传本仓库，请先阅读：
+
+1. [docs/UPLOAD_PACK_NOTE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/UPLOAD_PACK_NOTE.md)
