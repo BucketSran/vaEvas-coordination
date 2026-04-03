@@ -12,6 +12,10 @@ Purpose:
 
 This is not the final paper text.
 
+Execution checklist for closing the paper gaps:
+
+1. [PAPER_GAP_CHECKLIST.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/PAPER_GAP_CHECKLIST.md)
+
 ---
 
 ## 1. Abstract
