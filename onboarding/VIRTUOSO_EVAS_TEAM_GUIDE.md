@@ -173,23 +173,43 @@ print(c.execute_skill("1+2"))
 
 ---
 
-## 8. 给两位新同学的建议分工（可直接用）
+## 8. 当前推荐分工（可直接分配）
 
-## 8.1 同学 A：连接与工具链稳定性
+更完整的流程见：
 
-交付目标：
+1. `docs/EXAMPLE_TO_BENCHMARK_WORKFLOW.md`
 
-1. 可独立完成 bridge 启停与状态诊断。
-2. 可独立跑通一次 Spectre 基准仿真。
-3. 输出一份“故障 -> 原因 -> 修复”的排查记录。
+本周建议直接按“跑 example -> 做闭环 -> 提炼 benchmark -> 提 PR”的方式推进。
 
-## 8.2 同学 B：闭环验证与 benchmark 数据
+## 8.1 shenbufan
 
-交付目标：
+建议先做稳定、容易补 check 的 example：
 
-1. 可独立跑通 EVAS + Spectre 对照。
-2. 输出一致性指标与 gate 结论。
-3. 更新 benchmark 记录并给出下一轮优化建议。
+1. `lfsr`
+2. `clk_burst_gen`
+3. `digital_basics`
+
+最低交付：
+
+1. 跑通 EVAS
+2. 给出最小行为检查
+3. 转成 1 条 benchmark seed
+4. 提 1 个 PR
+
+## 8.2 liangyuxuan
+
+建议先做 data-converter / calibration 向的 example：
+
+1. `dac_binary_clk_4b`
+2. `adc_dac_ideal_4b`
+3. `dwa_ptr_gen`
+
+最低交付：
+
+1. 跑通 EVAS
+2. 明确 benchmark 价值
+3. 转成 1 条 benchmark seed
+4. 提 1 个 PR
 
 ---
 

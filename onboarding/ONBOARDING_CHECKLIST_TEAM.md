@@ -21,6 +21,7 @@
 5. `docs/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md`
 6. `docs/PROJECT_OVERVIEW.md`
 7. `docs/REPOSITORIES.md`
+8. `docs/EXAMPLE_TO_BENCHMARK_WORKFLOW.md`
 
 ---
 
@@ -126,6 +127,7 @@ python3 ab_gate_decision.py --baseline output/baseline_no_idt_ppm/consistency_re
 2. `consistency_report.json` 路径
 3. gate 结果（含 `next_action`）
 4. 文字结论：本轮是否通过、下一步做什么
+5. 至少 1 条 benchmark seed 的 PR
 
 ---
 

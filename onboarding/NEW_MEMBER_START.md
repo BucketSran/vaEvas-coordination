@@ -18,10 +18,11 @@
 3. [QUICK_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/QUICK_START.md)
 4. [VIRTUOSO_EVAS_TEAM_GUIDE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/VIRTUOSO_EVAS_TEAM_GUIDE.md)
 5. [ONBOARDING_CHECKLIST_TEAM.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/ONBOARDING_CHECKLIST_TEAM.md)
-6. [SSH_TUNNEL_DAEMON_RUNBOOK.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/SSH_TUNNEL_DAEMON_RUNBOOK.md)
-7. [EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md)
-8. [AI_ONE_CLICK_TUNNEL_AND_LOOP_PROMPTS.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/AI_ONE_CLICK_TUNNEL_AND_LOOP_PROMPTS.md)
-9. [FIRST_TASK_EXAMPLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/FIRST_TASK_EXAMPLE.md)
+6. [EXAMPLE_TO_BENCHMARK_WORKFLOW.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/EXAMPLE_TO_BENCHMARK_WORKFLOW.md)
+7. [SSH_TUNNEL_DAEMON_RUNBOOK.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/SSH_TUNNEL_DAEMON_RUNBOOK.md)
+8. [EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md)
+9. [AI_ONE_CLICK_TUNNEL_AND_LOOP_PROMPTS.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/AI_ONE_CLICK_TUNNEL_AND_LOOP_PROMPTS.md)
+10. [FIRST_TASK_EXAMPLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/FIRST_TASK_EXAMPLE.md)
 
 扩展阅读（完整项目目录可用）：
 
@@ -32,7 +33,8 @@
 
 1. 跑通一个最小示例或最小 benchmark case
 2. 完成一次完整的 `brief -> kpi -> execute -> log -> review`
-3. 提交一个小而完整的 PR
+3. 按 `example -> benchmark` 流程补 1 条 benchmark seed
+4. 提交一个小而完整的 PR
 
 ## 不要做的事
 
