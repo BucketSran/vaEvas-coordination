@@ -20,7 +20,8 @@
 5. [ONBOARDING_CHECKLIST_TEAM.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/ONBOARDING_CHECKLIST_TEAM.md)
 6. [SSH_TUNNEL_DAEMON_RUNBOOK.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/SSH_TUNNEL_DAEMON_RUNBOOK.md)
 7. [EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md)
-8. [FIRST_TASK_EXAMPLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/FIRST_TASK_EXAMPLE.md)
+8. [AI_ONE_CLICK_TUNNEL_AND_LOOP_PROMPTS.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/AI_ONE_CLICK_TUNNEL_AND_LOOP_PROMPTS.md)
+9. [FIRST_TASK_EXAMPLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/FIRST_TASK_EXAMPLE.md)
 
 扩展阅读（完整项目目录可用）：
 
