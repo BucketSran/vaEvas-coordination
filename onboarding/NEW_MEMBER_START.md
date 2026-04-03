@@ -8,12 +8,18 @@
 2. 配好 Git 和本地环境
 3. 跑通第一个小任务流程
 
+如果你主要依赖 AI，不要跳过“先解释项目”这一步。
+先让 AI 读文档并解释，再让 AI 帮你执行。
+
 ## 阅读顺序
 
 1. [README.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/README.md)
-2. [TEAM_PLAN.md](/Users/bucketsran/Documents/TsingProject/vaEvas/worksche/TEAM_PLAN.md)
-3. [GIT_WORKFLOW.md](/Users/bucketsran/Documents/TsingProject/vaEvas/worksche/GIT_WORKFLOW.md)
-4. [ONBOARDING_CHECKLIST.md](/Users/bucketsran/Documents/TsingProject/vaEvas/worksche/ONBOARDING_CHECKLIST.md)
+2. [QUICK_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/QUICK_START.md)
+3. [AI_PROMPT_STARTER.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/AI_PROMPT_STARTER.md)
+4. [TEAM_PLAN.md](/Users/bucketsran/Documents/TsingProject/vaEvas/worksche/TEAM_PLAN.md)
+5. [GIT_WORKFLOW.md](/Users/bucketsran/Documents/TsingProject/vaEvas/worksche/GIT_WORKFLOW.md)
+6. [ONBOARDING_CHECKLIST.md](/Users/bucketsran/Documents/TsingProject/vaEvas/worksche/ONBOARDING_CHECKLIST.md)
+7. [FIRST_TASK_EXAMPLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/FIRST_TASK_EXAMPLE.md)
 
 ## 第一周目标
 
@@ -26,3 +32,4 @@
 1. 不要直接在 `main` 上开发
 2. 不要在不清楚 scope 的情况下改 runner 或评分逻辑
 3. 不要只交代码不交验证证据
+4. 不要让 AI 在没读文档的情况下直接替你做决定

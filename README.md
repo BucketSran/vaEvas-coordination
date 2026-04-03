@@ -59,13 +59,36 @@
 
 ## 第一次进入先看什么
 
-按这个顺序：
+如果你是第一次接触这个项目，而且很多操作会依赖 AI，建议不要直接跳进所有文档。
 
-1. [docs/PROJECT_OVERVIEW.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/PROJECT_OVERVIEW.md)
-2. [docs/REPOSITORIES.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/REPOSITORIES.md)
-3. [docs/DAILY_SYNC.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/DAILY_SYNC.md)
-4. [docs/COMMUNICATION_PACK.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/COMMUNICATION_PACK.md)
-5. [onboarding/NEW_MEMBER_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/NEW_MEMBER_START.md)
+先按这个顺序：
+
+1. [onboarding/QUICK_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/QUICK_START.md)
+   先看 5 分钟启动版，知道第一天到底做什么。
+2. [onboarding/AI_PROMPT_STARTER.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/AI_PROMPT_STARTER.md)
+   直接复制 prompt 给 AI，减少自己理解成本。
+3. [onboarding/NEW_MEMBER_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/NEW_MEMBER_START.md)
+   看完整的新成员接入路径。
+4. [docs/PROJECT_OVERVIEW.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/PROJECT_OVERVIEW.md)
+5. [docs/REPOSITORIES.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/REPOSITORIES.md)
+6. [docs/DAILY_SYNC.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/DAILY_SYNC.md)
+7. [docs/COMMUNICATION_PACK.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/COMMUNICATION_PACK.md)
+
+## 如果你主要依赖 AI
+
+建议把 AI 当成“项目助教 + 执行助手”，不要让它替你猜项目目标。
+
+正确做法是：
+
+1. 先让 AI 读 `coordination` 和 `worksche` 文档
+2. 再让 AI 告诉你当前项目在做什么
+3. 再让 AI 帮你确认今天该接什么任务
+4. 最后才让 AI 帮你执行具体操作
+
+优先使用：
+
+1. [onboarding/AI_PROMPT_STARTER.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/AI_PROMPT_STARTER.md)
+2. [onboarding/FIRST_TASK_EXAMPLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/FIRST_TASK_EXAMPLE.md)
 
 ---
 
