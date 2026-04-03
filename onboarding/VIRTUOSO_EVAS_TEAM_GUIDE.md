@@ -66,6 +66,7 @@ ssh <your-host-alias>
 1. `onboarding/ONBOARDING_CHECKLIST_TEAM.md`
 2. `docs/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md`
 3. `onboarding/NEW_MEMBER_START.md`
+4. `onboarding/SSH_TUNNEL_DAEMON_RUNBOOK.md`
 
 补充外部参考（在完整项目目录可用）：
 

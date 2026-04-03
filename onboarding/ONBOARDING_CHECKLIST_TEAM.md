@@ -75,7 +75,17 @@ pip install -e .
 
 ---
 
-## 5. Virtuoso bridge 最小连通检查
+## 5. 先执行 SSH 隧道与 Daemon 对齐手册（推荐）
+
+在执行 bridge 连通命令前，先跑通：
+
+1. `onboarding/SSH_TUNNEL_DAEMON_RUNBOOK.md`
+
+这一步能显著减少新人在 tunneling 和 daemon 端口不匹配上的反复试错。
+
+---
+
+## 6. Virtuoso bridge 最小连通检查
 
 进入 bridge 目录（路径按你机器实际情况）：
 
@@ -95,7 +105,7 @@ print(c.execute_skill("1+2"))
 
 ---
 
-## 6. EVAS-first 闭环最小执行
+## 7. EVAS-first 闭环最小执行
 
 在 CPPLL 示例目录执行：
 
@@ -108,7 +118,7 @@ python3 ab_gate_decision.py --baseline output/baseline_no_idt_ppm/consistency_re
 
 ---
 
-## 7. 首周最低交付标准
+## 8. 首周最低交付标准
 
 每位新成员至少提交：
 
@@ -119,7 +129,7 @@ python3 ab_gate_decision.py --baseline output/baseline_no_idt_ppm/consistency_re
 
 ---
 
-## 8. 失败时统一动作
+## 9. 失败时统一动作
 
 1. 不一致时先修 EVAS 语义层
 2. 不改矩阵求解底层原理
