@@ -34,6 +34,29 @@
 
 ---
 
+## Git 协作原则
+
+`vaEvas` 的代码仓库默认采用：
+
+1. `origin`
+   指向个人 fork
+2. `upstream`
+   指向团队主仓库
+
+这意味着：
+
+1. 每个人日常维护的是自己的 fork，而不是直接在主仓库上开发。
+2. 团队统一基线是 `upstream/main`。
+3. 所有正式改动先进入个人 fork，再通过 PR 合回主仓库。
+
+这样做的目的不是增加流程，而是保护主线稳定，支持多人并行开发，并让 review、回滚和质量控制更容易执行。
+
+具体操作规范见：
+
+1. [GIT_WORKFLOW.md](/Users/bucketsran/Documents/TsingProject/vaEvas/worksche/GIT_WORKFLOW.md)
+
+---
+
 ## 第一次进入先看什么
 
 按这个顺序：
