@@ -6,10 +6,10 @@
 
 ```text
 请先阅读以下文档，并用新手能懂的话总结：
-1. /Users/bucketsran/Documents/TsingProject/vaEvas-coordination/README.md
-2. /Users/bucketsran/Documents/TsingProject/vaEvas/worksche/TEAM_PLAN.md
-3. /Users/bucketsran/Documents/TsingProject/vaEvas/worksche/AI_WORKFLOW_OPTIMIZATION.md
-4. /Users/bucketsran/Documents/TsingProject/vaEvas/worksche/GIT_WORKFLOW.md
+1. vaEvas-coordination/README.md
+2. vaEvas-coordination/onboarding/NEW_MEMBER_START.md
+3. vaEvas-coordination/onboarding/ONBOARDING_CHECKLIST_TEAM.md
+4. vaEvas-coordination/docs/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md
 
 请回答我：
 1. 这个项目到底在做什么
@@ -20,7 +20,7 @@
 ## Prompt 2: 检查本地 Git 是否正确
 
 ```text
-请根据 /Users/bucketsran/Documents/TsingProject/vaEvas/worksche/GIT_WORKFLOW.md 的规则，帮我检查当前仓库的 Git remote 是否符合 fork + upstream 模型，并告诉我应该运行哪些命令修正它。
+请根据团队 fork + upstream 协作规则，帮我检查当前仓库的 Git remote 是否符合要求，并告诉我应该运行哪些命令修正它。
 ```
 
 ## Prompt 3: 开始第一个任务前先 interview

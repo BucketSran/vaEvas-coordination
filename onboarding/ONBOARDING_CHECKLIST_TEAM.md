@@ -49,7 +49,33 @@ git push origin main
 
 ---
 
-## 4. Virtuoso bridge 最小连通检查
+## 4. 执行前置环境（必须先做）
+
+在进入 bridge 和双仿真步骤前，先完成最小环境检查：
+
+1. Python 3 可用：`python3 --version`
+2. EVAS 仓库依赖已安装（含 `.venv`）
+3. bridge 仓库依赖已安装（含 `.venv`）
+
+示例：
+
+```bash
+cd <repo>/vaEvas/EVAS
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -e .
+
+cd <repo>/sshConnect/virtuoso-bridge-lite
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -e .
+```
+
+如果你的团队已准备统一环境，请遵循团队环境规范，不重复创建。
+
+---
+
+## 5. Virtuoso bridge 最小连通检查
 
 进入 bridge 目录（路径按你机器实际情况）：
 
@@ -69,7 +95,7 @@ print(c.execute_skill("1+2"))
 
 ---
 
-## 5. EVAS-first 闭环最小执行
+## 6. EVAS-first 闭环最小执行
 
 在 CPPLL 示例目录执行：
 
@@ -82,7 +108,7 @@ python3 ab_gate_decision.py --baseline output/baseline_no_idt_ppm/consistency_re
 
 ---
 
-## 6. 首周最低交付标准
+## 7. 首周最低交付标准
 
 每位新成员至少提交：
 
@@ -93,7 +119,7 @@ python3 ab_gate_decision.py --baseline output/baseline_no_idt_ppm/consistency_re
 
 ---
 
-## 7. 失败时统一动作
+## 8. 失败时统一动作
 
 1. 不一致时先修 EVAS 语义层
 2. 不改矩阵求解底层原理

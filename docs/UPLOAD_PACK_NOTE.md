@@ -9,6 +9,11 @@
 3. `docs/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md`
 4. `onboarding/NEW_MEMBER_START.md`
 
+重要边界：
+
+1. 本仓库可以单独完成“流程理解、任务分派、标准口径”。
+2. 真实仿真执行仍依赖代码仓库与 bridge 环境，不能只靠本仓库直接跑通。
+
 ---
 
 ## 2. 本次已附着到 coordination 的关键文件

@@ -55,9 +55,11 @@ ssh <your-host-alias>
 
 本项目常用目录：
 
-1. ssh bridge：`/Users/bucketsran/Documents/TsingProject/sshConnect/virtuoso-bridge-lite`
-2. 研发仓库：`/Users/bucketsran/Documents/TsingProject/vaEvas`
-3. 协作仓库：`/Users/bucketsran/Documents/TsingProject/vaEvas-coordination`
+1. ssh bridge：`<repo>/sshConnect/virtuoso-bridge-lite`
+2. 研发仓库：`<repo>/vaEvas`
+3. 协作仓库：`<repo>/vaEvas-coordination`
+
+示例：`<repo>` 可以是 `/Users/<your-user>/Documents/TsingProject`。
 
 ## 3.3 必读文档
 
@@ -67,8 +69,8 @@ ssh <your-host-alias>
 
 补充外部参考（在完整项目目录可用）：
 
-1. `/Users/bucketsran/Documents/TsingProject/sshConnect/Virtuoso桥接说明.md`
-2. `/Users/bucketsran/Documents/TsingProject/sshConnect/virtuoso-bridge-lite/README.md`
+1. `<repo>/sshConnect/Virtuoso桥接说明.md`
+2. `<repo>/sshConnect/virtuoso-bridge-lite/README.md`
 
 ---
 
@@ -77,7 +79,7 @@ ssh <your-host-alias>
 ## 4.1 进入 bridge 目录
 
 ```bash
-cd /Users/bucketsran/Documents/TsingProject/sshConnect/virtuoso-bridge-lite
+cd <repo>/sshConnect/virtuoso-bridge-lite
 ```
 
 ## 4.2 启动 bridge

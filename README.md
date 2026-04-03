@@ -82,7 +82,7 @@
 
 正确做法是：
 
-1. 先让 AI 读 `coordination` 和 `worksche` 文档
+1. 先让 AI 读 `coordination` 文档（若有完整项目目录，再补 `worksche`）
 2. 再让 AI 告诉你当前项目在做什么
 3. 再让 AI 帮你确认今天该接什么任务
 4. 最后才让 AI 帮你执行具体操作
@@ -109,6 +109,11 @@
    管顶层协作、汇报、同步节奏
 2. `vaEvas/worksche`
    管团队执行、任务模板、交付规范
+
+如果当前只分发了 `vaEvas-coordination`，请优先使用：
+
+1. [onboarding/ONBOARDING_CHECKLIST_TEAM.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/ONBOARDING_CHECKLIST_TEAM.md)
+2. [docs/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md)
 
 ---
 

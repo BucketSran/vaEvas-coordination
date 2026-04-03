@@ -5,7 +5,7 @@
 1. 读 [README.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/README.md)
 2. 读 [AI_PROMPT_STARTER.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/AI_PROMPT_STARTER.md)
 3. 让 AI 用这些文档给你解释“项目目标 + 你的任务”
-4. 按 [ONBOARDING_CHECKLIST.md](/Users/bucketsran/Documents/TsingProject/vaEvas/worksche/ONBOARDING_CHECKLIST.md) 配好 Git 和本地环境
+4. 按 [ONBOARDING_CHECKLIST_TEAM.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/ONBOARDING_CHECKLIST_TEAM.md) 配好 Git 和本地环境
 5. 按 [FIRST_TASK_EXAMPLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/FIRST_TASK_EXAMPLE.md) 跑通第一个小任务
 
 ## 先不要做什么
@@ -24,5 +24,5 @@
 ## 你今天可以直接复制给 AI 的一句话
 
 ```text
-请先阅读 vaEvas-coordination 和 vaEvas/worksche 里的文档，用新手能懂的话告诉我：这个项目在做什么、我今天应该先做什么、我不应该直接做什么。
+请先阅读 vaEvas-coordination 里的文档，用新手能懂的话告诉我：这个项目在做什么、我今天应该先做什么、我不应该直接做什么。
 ```
