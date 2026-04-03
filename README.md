@@ -1,42 +1,81 @@
 # vaEvas Coordination
 
-这是 `vaEvas` 项目的顶层协作仓库，用来统一管理：
+这是 `vaEvas` 项目的协作入口仓库。
+
+这里不放产品代码，主要用来统一：
 
 1. 项目目标
-2. 组织分工
-3. AI 工作流
-4. Git 协作规则
-5. 新成员接入
-6. 周进度、风险、阶段汇报
+2. 仓库分工
+3. 新人接入
+4. AI 工作流
+5. Git 协作规则
+6. 周进度、风险和阶段同步
 
-这个仓库不承载产品代码。
+如果你是第一次接触这个项目，先记住一句话：
 
-产品代码仍在以下三个独立仓库中：
+`这个仓库回答“我们在做什么、你今天该做什么、做完后怎么提交”。`
 
-1. `EVAS`
-2. `behavioral-veriloga-eval`
-3. `veriloga-skills`
+## 先看哪里
 
----
+如果你只想最快开始，不要先把所有文档都读一遍。
 
-## 仓库定位
+按这个顺序看：
 
-如果把整个项目拆成三层：
+1. [00_START_HERE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/00_START_HERE.md)
+2. [QUICK_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/QUICK_START.md)
+3. [ONBOARDING_CHECKLIST_TEAM.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/ONBOARDING_CHECKLIST_TEAM.md)
+4. [00_DOC_MAP.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/00_DOC_MAP.md)
+
+如果你只有 10 分钟，就先只看第 1 和第 2 个文件。
+
+## 你今天要做什么
+
+新人第一轮任务可以压缩成 4 步：
+
+1. 读入口文档，知道项目和仓库分工
+2. 认领一个 `example`
+3. 按 `example -> closed loop -> benchmark seed` 跑一轮
+4. 最后提一个 PR
+
+一句话版交付定义：
+
+`跑通一个 example，留下闭环验证证据，判断它能不能转 benchmark，并把结果通过 PR 提交。`
+
+## 四个相关仓库分别做什么
+
+`vaEvas` 相关工作通常分布在 4 个仓库：
+
+1. `vaEvas-coordination`
+   管协作、分工、入口文档、流程和同步节奏
+2. `EVAS`
+   管模拟器能力和语义实现
+3. `behavioral-veriloga-eval`
+   管 benchmark、runner、任务定义和评分
+4. `veriloga-skills`
+   管 Verilog-A 生成与审查的技能规则和参考资料
+
+给新人最重要的理解是：
+
+1. 大多数第一轮任务先从 `coordination` 开始接收
+2. 大多数第一周工作会落在 `behavioral-veriloga-eval` 或 example 验证流程
+3. 不要默认自己第一周就需要修改 `EVAS` 内核
+
+## 这个仓库和代码仓库的关系
+
+可以把整个项目理解成三层：
 
 1. 代码仓库层
-   负责实现、验证、benchmark、skills
+   `EVAS`、`behavioral-veriloga-eval`、`veriloga-skills`
 2. 工作流层
-   负责任务模板、执行闭环、日志和 review
-3. 顶层协作层
-   负责目标统一、进度同步、分工管理、对上汇报
+   brief、kpi、plan、log、review 这类执行规范
+3. 协作层
+   也就是本仓库，负责把目标、节奏和任务入口说明白
 
-本仓库就是第 3 层，也就是顶层协作层。
+所以本仓库的价值不是“多一个文档仓库”，而是让大家少走弯路。
 
----
+## Git 协作怎么理解
 
-## Git 协作原则
-
-`vaEvas` 的代码仓库默认采用：
+代码仓库默认采用：
 
 1. `origin`
    指向个人 fork
@@ -45,106 +84,68 @@
 
 这意味着：
 
-1. 每个人日常维护的是自己的 fork，而不是直接在主仓库上开发。
-2. 团队统一基线是 `upstream/main`。
-3. 所有正式改动先进入个人 fork，再通过 PR 合回主仓库。
+1. 日常开发先在个人 fork 上进行
+2. 团队统一基线是 `upstream/main`
+3. 正式改动通过 PR 合回主仓库
 
-这样做的目的不是增加流程，而是保护主线稳定，支持多人并行开发，并让 review、回滚和质量控制更容易执行。
-
-具体操作规范见：
+如果你需要更详细的 Git 规范，看：
 
 1. [GIT_WORKFLOW.md](/Users/bucketsran/Documents/TsingProject/vaEvas/worksche/GIT_WORKFLOW.md)
 
----
-
-## 第一次进入先看什么
-
-如果你是第一次接触这个项目，而且很多操作会依赖 AI，建议不要直接跳进所有文档。
-
-先看编号入口（推荐）：
-
-1. [docs/00_DOC_MAP.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/00_DOC_MAP.md)
-2. [onboarding/00_START_HERE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/00_START_HERE.md)
-
-再按细化顺序阅读：
-
-1. [onboarding/QUICK_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/QUICK_START.md)
-   先看 5 分钟启动版，知道第一天到底做什么。
-2. [onboarding/AI_PROMPT_STARTER.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/AI_PROMPT_STARTER.md)
-   直接复制 prompt 给 AI，减少自己理解成本。
-3. [onboarding/VIRTUOSO_EVAS_TEAM_GUIDE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/VIRTUOSO_EVAS_TEAM_GUIDE.md)
-   新成员 Virtuoso 连接、最小概念和双验证执行手册。
-4. [onboarding/NEW_MEMBER_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/NEW_MEMBER_START.md)
-   看完整的新成员接入路径。
-5. [docs/PROJECT_OVERVIEW.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/PROJECT_OVERVIEW.md)
-6. [docs/REPOSITORIES.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/REPOSITORIES.md)
-7. [docs/DAILY_SYNC.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/DAILY_SYNC.md)
-8. [docs/COMMUNICATION_PACK.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/COMMUNICATION_PACK.md)
-
 ## 如果你主要依赖 AI
 
-建议把 AI 当成“项目助教 + 执行助手”，不要让它替你猜项目目标。
+推荐把 AI 当作“项目助教 + 执行助手”，而不是直接让它猜你的任务。
 
-正确做法是：
+更稳的顺序是：
 
-1. 先让 AI 读 `coordination` 文档（若有完整项目目录，再补 `worksche`）
-2. 再让 AI 告诉你当前项目在做什么
-3. 再让 AI 帮你确认今天该接什么任务
-4. 最后才让 AI 帮你执行具体操作
+1. 先让 AI 读本仓库入口文档
+2. 让 AI 总结当前项目目标和你负责的范围
+3. 让 AI 帮你拆出今天的一轮任务
+4. 最后再让 AI 帮你执行、验证和整理 PR
 
-优先使用：
+优先用这些入口：
 
-1. [onboarding/AI_PROMPT_STARTER.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/AI_PROMPT_STARTER.md)
-2. [onboarding/FIRST_TASK_EXAMPLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/FIRST_TASK_EXAMPLE.md)
+1. [AI_PROMPT_STARTER.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/AI_PROMPT_STARTER.md)
+2. [FIRST_TASK_EXAMPLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/FIRST_TASK_EXAMPLE.md)
 
----
+## 推荐阅读路径
 
-## 和 `vaEvas/worksche` 的关系
+如果你希望按层次看文档，建议这样走：
 
-`vaEvas/worksche/` 里放的是项目内执行文档：
+1. [00_START_HERE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/00_START_HERE.md)
+2. [QUICK_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/QUICK_START.md)
+3. [NEW_MEMBER_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/NEW_MEMBER_START.md)
+4. [PROJECT_OVERVIEW.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/PROJECT_OVERVIEW.md)
+5. [REPOSITORIES.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/REPOSITORIES.md)
+6. [EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md)
 
-1. [TEAM_PLAN.md](/Users/bucketsran/Documents/TsingProject/vaEvas/worksche/TEAM_PLAN.md)
-2. [AI_WORKFLOW_OPTIMIZATION.md](/Users/bucketsran/Documents/TsingProject/vaEvas/worksche/AI_WORKFLOW_OPTIMIZATION.md)
-3. [GIT_WORKFLOW.md](/Users/bucketsran/Documents/TsingProject/vaEvas/worksche/GIT_WORKFLOW.md)
-4. [ONBOARDING_CHECKLIST.md](/Users/bucketsran/Documents/TsingProject/vaEvas/worksche/ONBOARDING_CHECKLIST.md)
+## 每天开始前看什么
 
-这里的关系是：
+建议每天开始前先确认这三件事：
 
-1. `vaEvas-coordination`
-   管顶层协作、汇报、同步节奏
-2. `vaEvas/worksche`
-   管团队执行、任务模板、交付规范
-
-如果当前只分发了 `vaEvas-coordination`，请优先使用：
-
-1. [onboarding/ONBOARDING_CHECKLIST_TEAM.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/ONBOARDING_CHECKLIST_TEAM.md)
-2. [docs/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md)
-
----
-
-## 推荐每天第一件事
-
-1. 先同步本仓库，确认目标、优先级、周状态和风险是否更新。
-2. 再同步当天涉及的代码仓库 `upstream/main`。
-3. 开始当天任务前，确认对应的 `brief/kpi/plan` 是否齐全。
-
----
+1. 当前优先级有没有变化
+2. 你今天要动的是哪个仓库
+3. 这轮任务的 `brief / kpi / plan` 是否齐全
 
 ## 目录说明
 
 1. `docs/`
-   项目概览、仓库说明、同步节奏、沟通材料。
-2. `templates/`
-   周报、状态更新、风险记录模板。
-3. `status/`
-   阶段状态、周进度、临时同步记录。
-4. `risks/`
-   风险清单和处理记录。
-5. `onboarding/`
-   新成员接入材料。
+   项目概览、仓库说明、闭环规范、沟通材料
+2. `onboarding/`
+   新成员入口、操作手册、快速开始材料
+3. `templates/`
+   周报、状态更新、风险记录模板
+4. `status/`
+   阶段状态和周进度记录
+5. `risks/`
+   风险清单和处理记录
 
-## 仅上传 coordination 时
+## 只拿到这个仓库怎么办
 
-如果你只上传本仓库，请先阅读：
+如果你当前只拿到了 `vaEvas-coordination`，先不要慌，先按这里走：
 
-1. [docs/UPLOAD_PACK_NOTE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/UPLOAD_PACK_NOTE.md)
+1. [00_START_HERE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/00_START_HERE.md)
+2. [ONBOARDING_CHECKLIST_TEAM.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/ONBOARDING_CHECKLIST_TEAM.md)
+3. [UPLOAD_PACK_NOTE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/UPLOAD_PACK_NOTE.md)
+
+这样你至少能先把项目入口、任务边界和第一轮交付搞清楚。
