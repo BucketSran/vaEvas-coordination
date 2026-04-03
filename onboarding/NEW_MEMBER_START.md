@@ -34,7 +34,8 @@
 1. 跑通一个最小示例或最小 benchmark case
 2. 完成一次完整的 `brief -> kpi -> execute -> log -> review`
 3. 按 `example -> benchmark` 流程补 1 条 benchmark seed
-4. 提交一个小而完整的 PR
+4. 为统一实验结果表格补至少 1 行有效数据
+5. 提交一个小而完整的 PR
 
 ## 不要做的事
 

@@ -194,7 +194,8 @@ print(c.execute_skill("1+2"))
 1. 跑通 EVAS
 2. 给出最小行为检查
 3. 转成 1 条 benchmark seed
-4. 提 1 个 PR
+4. 把结果填进统一实验表格
+5. 提 1 个 PR
 
 ## 8.2 liangyuxuan
 
@@ -209,7 +210,8 @@ print(c.execute_skill("1+2"))
 1. 跑通 EVAS
 2. 明确 benchmark 价值
 3. 转成 1 条 benchmark seed
-4. 提 1 个 PR
+4. 把结果填进统一实验表格
+5. 提 1 个 PR
 
 ---
 
@@ -221,7 +223,8 @@ print(c.execute_skill("1+2"))
 2. 关键结果文件路径
 3. 一致性指标摘要
 4. gate 判定结果
-5. 下一步 action（修 EVAS 语义 / 回看模型代码）
+5. 统一实验表格中的对应数据行
+6. 下一步 action（修 EVAS 语义 / 回看模型代码）
 
 建议额外交付：
 
