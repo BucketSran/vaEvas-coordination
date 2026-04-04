@@ -26,6 +26,10 @@ Large language models have recently shown strong performance on digital HDL gene
 
 Digital HDL evaluation has recently benefited from benchmarks such as `VerilogEval` and larger RTL-oriented datasets such as `OpenLLM-RTL`. In contrast, Verilog-A remains under-served despite its practical importance in analog and mixed-signal behavioral modeling. The gap is not only a data gap but also an execution gap: useful Verilog-A evaluation must handle simulator compatibility, event semantics, closed-loop dynamics, and benchmark rules that are grounded in actual model behavior rather than text similarity.
 
+Useful external references currently collected for positioning:
+
+1. [referencepaper/README.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/referencepaper/README.md)
+
 `vaEvas` is motivated by this gap. Our goal is to build an end-to-end loop for Verilog-A:
 
 1. generate or author EVAS-compatible Verilog-A
@@ -288,15 +292,27 @@ Compared with RTL-oriented benchmarks such as `VerilogEval` and `OpenLLM-RTL`, `
 4. `vaEvas` includes cross-simulator parity for selected tasks
 5. `vaEvas` currently emphasizes workflow and failure attribution more explicitly
 
-### Blank: formal related-work positioning
+### 10.3 Related-Work Positioning
 
-`[TODO]`
+The closest public references to `vaEvas` currently come from RTL-oriented LLM evaluation and generation systems rather than from Verilog-A-specific benchmarks.
 
-Write a more rigorous related-work subsection covering:
+`VerilogEval` represents the most direct baseline for executable HDL evaluation. Its core contribution is to evaluate generated Verilog through runnable functional validation rather than text similarity alone. This is closely aligned with the execution-first philosophy of `vaEvas`. However, `vaEvas` differs by targeting Verilog-A behavioral models, where waveform semantics, event handling, and simulator behavior matter more directly than in typical RTL tasks.
 
-1. Verilog HDL code-generation benchmarks
-2. Verilog-A modeling tools and automatic modeling literature
-3. simulator-aware evaluation methods
+`VGen` is especially useful as a reference for the minimal executable loop. It separates syntax acceptance from functional validation through testbenches, which maps naturally to the `L0/L1` split used in our workflow. In that sense, `VGen` is a useful conceptual baseline for the lightweight side of `vaEvas`: compile success is necessary but not sufficient, and behavior checks must remain explicit and auditable.
+
+`OpenLLM-RTL` is closer to `vaEvas` in project shape than in domain. It treats RTL generation as a benchmark-and-framework problem rather than as isolated prompt demos. This is similar to how `vaEvas` tries to connect examples, benchmark tasks, checks, and evaluation artifacts into one system. The difference is that `vaEvas` adds simulator-aware behavioral validation and selective EVAS-Spectre parity loops for high-value tasks.
+
+`RTL-Coder` is valuable as a reference for end-to-end project organization. It shows how a research effort can be structured across data generation, training, inference, and benchmark inference. While `vaEvas` is not yet equally mature on the model-training side, it can benefit from the same systems view: benchmark construction should not remain an isolated activity, but should eventually connect to task generation, model prompting, evaluation, and failure attribution.
+
+Taken together, these RTL-side works suggest that `vaEvas` is best positioned not as a copy of an RTL benchmark, but as an extension of executable HDL evaluation into the Verilog-A setting. Its distinctive additions are:
+
+1. Verilog-A rather than RTL as the target language
+2. EVAS-first runtime validation
+3. layered closure from minimal execution to parity-sensitive validation
+4. benchmark construction from real behavioral examples
+5. optional cross-simulator parity against Virtuoso/Spectre
+
+The remaining related-work gap is on the Verilog-A side. Prior Verilog-A literature has addressed modeling tools, automatic behavioral abstraction, and data-driven model construction, but we have not yet fully integrated those references into a dedicated subsection. That integration remains necessary for a paper-ready version of this draft.
 
 ## 11. Data and Artifact Design
 

@@ -115,8 +115,10 @@ Must cover:
 Minimum references to integrate:
 
 1. `VerilogEval`
-2. `OpenLLM-RTL`
-3. prior Verilog-A tooling/modeling papers in `referencepaper` or later collected set
+2. `VGen`
+3. `OpenLLM-RTL`
+4. `RTL-Coder`
+5. prior Verilog-A tooling/modeling papers in `referencepaper` or later collected set
 
 ### 2.4 Figures
 
