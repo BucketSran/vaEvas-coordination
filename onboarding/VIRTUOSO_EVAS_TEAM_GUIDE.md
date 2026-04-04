@@ -64,7 +64,7 @@ ssh <your-host-alias>
 ## 3.3 必读文档
 
 1. `onboarding/ONBOARDING_CHECKLIST_TEAM.md`
-2. `docs/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md`
+2. `docs/benchmark/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md`
 3. `onboarding/NEW_MEMBER_START.md`
 4. `onboarding/SSH_TUNNEL_DAEMON_RUNBOOK.md`
 5. `onboarding/AI_ONE_CLICK_TUNNEL_AND_LOOP_PROMPTS.md`
@@ -177,7 +177,7 @@ print(c.execute_skill("1+2"))
 
 更完整的流程见：
 
-1. `docs/EXAMPLE_TO_BENCHMARK_WORKFLOW.md`
+1. `docs/benchmark/EXAMPLE_TO_BENCHMARK_WORKFLOW.md`
 
 本周建议直接按“跑 example -> 做闭环 -> 提炼 benchmark -> 提 PR”的方式推进。
 

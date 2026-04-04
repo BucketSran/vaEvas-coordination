@@ -5,8 +5,8 @@
 ## 1. 第一层：先建立全局认知
 
 1. `../README.md`
-2. `./PROJECT_OVERVIEW.md`
-3. `./REPOSITORIES.md`
+2. `./project/PROJECT_OVERVIEW.md`
+3. `./project/REPOSITORIES.md`
 
 ## 2. 第二层：新人执行入口
 
@@ -18,13 +18,13 @@
 
 1. `../onboarding/SSH_TUNNEL_DAEMON_RUNBOOK.md`
 2. `../onboarding/AI_ONE_CLICK_TUNNEL_AND_LOOP_PROMPTS.md`
-3. `./EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md`
+3. `./benchmark/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md`
 
 ## 4. 第四层：协作与沟通
 
-1. `./COMMUNICATION_PACK.md`
-2. `./DAILY_SYNC.md`
-3. `./UPLOAD_PACK_NOTE.md`
+1. `./ops/COMMUNICATION_PACK.md`
+2. `./ops/DAILY_SYNC.md`
+3. `./ops/UPLOAD_PACK_NOTE.md`
 
 ## 5. 说明
 

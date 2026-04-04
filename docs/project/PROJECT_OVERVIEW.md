@@ -33,6 +33,6 @@
 
 ## 进一步阅读
 
-1. [EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md)
+1. [EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/benchmark/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md)
 2. [TEAM_PLAN.md](/Users/bucketsran/Documents/TsingProject/vaEvas/worksche/TEAM_PLAN.md)
 3. [AI_WORKFLOW_OPTIMIZATION.md](/Users/bucketsran/Documents/TsingProject/vaEvas/worksche/AI_WORKFLOW_OPTIMIZATION.md)

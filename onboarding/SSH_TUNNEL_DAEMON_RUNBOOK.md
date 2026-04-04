@@ -130,4 +130,4 @@ ssh <target-host> 'csh -c "source <cadence-cshrc>; which spectre"'
 2. EVAS + Spectre 对照
 3. gate 判定
 
-参考：`docs/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md`
+参考：`docs/benchmark/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md`

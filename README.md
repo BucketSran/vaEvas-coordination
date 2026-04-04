@@ -21,10 +21,11 @@
 
 按这个顺序看：
 
-1. [00_START_HERE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/00_START_HERE.md)
-2. [QUICK_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/QUICK_START.md)
-3. [ONBOARDING_CHECKLIST_TEAM.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/ONBOARDING_CHECKLIST_TEAM.md)
-4. [00_DOC_MAP.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/00_DOC_MAP.md)
+1. [00_STRUCTURE_GUIDE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/00_STRUCTURE_GUIDE.md)
+2. [00_START_HERE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/00_START_HERE.md)
+3. [QUICK_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/QUICK_START.md)
+4. [ONBOARDING_CHECKLIST_TEAM.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/ONBOARDING_CHECKLIST_TEAM.md)
+5. [00_DOC_MAP.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/00_DOC_MAP.md)
 
 如果你只有 10 分钟，就先只看第 1 和第 2 个文件。
 
@@ -115,9 +116,9 @@
 1. [00_START_HERE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/00_START_HERE.md)
 2. [QUICK_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/QUICK_START.md)
 3. [NEW_MEMBER_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/NEW_MEMBER_START.md)
-4. [PROJECT_OVERVIEW.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/PROJECT_OVERVIEW.md)
-5. [REPOSITORIES.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/REPOSITORIES.md)
-6. [EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md)
+4. [PROJECT_OVERVIEW.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/project/PROJECT_OVERVIEW.md)
+5. [REPOSITORIES.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/project/REPOSITORIES.md)
+6. [EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/benchmark/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md)
 
 ## 每天开始前看什么
 
@@ -146,6 +147,6 @@
 
 1. [00_START_HERE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/00_START_HERE.md)
 2. [ONBOARDING_CHECKLIST_TEAM.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/ONBOARDING_CHECKLIST_TEAM.md)
-3. [UPLOAD_PACK_NOTE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/UPLOAD_PACK_NOTE.md)
+3. [UPLOAD_PACK_NOTE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/ops/UPLOAD_PACK_NOTE.md)
 
 这样你至少能先把项目入口、任务边界和第一轮交付搞清楚。

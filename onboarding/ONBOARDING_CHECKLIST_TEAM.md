@@ -18,10 +18,10 @@
 2. `onboarding/QUICK_START.md`
 3. `onboarding/NEW_MEMBER_START.md`
 4. `onboarding/VIRTUOSO_EVAS_TEAM_GUIDE.md`
-5. `docs/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md`
-6. `docs/PROJECT_OVERVIEW.md`
-7. `docs/REPOSITORIES.md`
-8. `docs/EXAMPLE_TO_BENCHMARK_WORKFLOW.md`
+5. `docs/benchmark/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md`
+6. `docs/project/PROJECT_OVERVIEW.md`
+7. `docs/project/REPOSITORIES.md`
+8. `docs/benchmark/EXAMPLE_TO_BENCHMARK_WORKFLOW.md`
 
 ---
 
