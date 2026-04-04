@@ -80,7 +80,8 @@
 
 1. [PROJECT_OVERVIEW.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/project/PROJECT_OVERVIEW.md)
 2. [REPOSITORIES.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/project/REPOSITORIES.md)
-3. [00_DOC_MAP.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/00_DOC_MAP.md)
+3. [WORK_ASSIGNMENT.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/project/WORK_ASSIGNMENT.md)
+4. [00_DOC_MAP.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/00_DOC_MAP.md)
 
 ### B. Benchmark 工作流类
 
