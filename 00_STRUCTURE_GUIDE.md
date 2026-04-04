@@ -89,6 +89,7 @@
 
 1. [EXAMPLE_TO_BENCHMARK_WORKFLOW.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/benchmark/EXAMPLE_TO_BENCHMARK_WORKFLOW.md)
 2. [EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/benchmark/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md)
+3. [META_JSON_MIN_TEMPLATE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/benchmark/META_JSON_MIN_TEMPLATE.md)
 
 ### C. 结果表类
 

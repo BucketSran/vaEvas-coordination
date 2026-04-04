@@ -8,6 +8,41 @@
 
 `选样例 -> 跑通 -> 双验证 -> 定义检查 -> 入 benchmark -> 提 PR`
 
+新增分层约定（从现在开始执行）：
+
+`example -> raw benchmark -> verified benchmark`
+
+这不是推翻原流程，而是给现有流程加一个质量闸门。
+
+---
+
+## 分层的价值和与原思路的区别
+
+### 原思路（单层）
+
+`example -> benchmark`
+
+问题：
+
+1. 演示型样例和严格评测样例会混在一起。
+2. 模型分数可能被“容易样例”抬高，难以判断真实提升。
+3. 对外汇报与里程碑决策容易受噪声影响。
+
+### 现在思路（双层）
+
+`example -> raw benchmark -> verified benchmark`
+
+价值：
+
+1. `raw` 保证扩充速度（先覆盖题量）。
+2. `verified` 保证评测可信（只看通过门禁的样例）。
+3. 结果可诊断：可以区分“模板适配提升”和“真实能力提升”。
+
+定义：
+
+1. `raw benchmark`：由 example 转化并可运行，但尚未完成完整双验证或严格检查。
+2. `verified benchmark`：通过 EVAS + Spectre（按任务需要）的一致性检查，且检查规则可复现、可解释。
+
 ---
 
 ## 什么样的 example 值得转 benchmark
@@ -82,6 +117,11 @@
 2. `meta.json`
 3. `checks.yaml`
 
+并在 `meta.json` 增加分层字段：
+
+1. `tier: raw | verified`
+2. `verification_status: pending | passed | failed`
+
 ### Step 6. 补 runner check
 
 在 runner 里把 `sim_correct` 的最小判定写清楚。
@@ -97,6 +137,12 @@
 
 1. 新 benchmark 会判通过。
 2. 检查规则不过严也不过松。
+
+通过后执行升级：
+
+1. `tier: raw -> verified`
+2. 记录升级证据（命令、结果路径、关键指标）
+3. 在结果表中标记升级日期
 
 ### Step 8. 提交 PR
 
@@ -232,3 +278,11 @@ PR 至少写清楚：
 3. 已用参考结果回喂验证。
 4. 已通过 code review。
 5. 已提 PR。
+
+补充 gate（分层口径）：
+
+1. 进入 `raw benchmark` 只要求：可运行 + 有初版检查。
+2. 进入 `verified benchmark` 必须要求：
+3. EVAS 通过并有证据。
+4. 需要对照的任务完成 Spectre 对照并通过阈值。
+5. 检查规则有明确阈值，不依赖主观读波形。
