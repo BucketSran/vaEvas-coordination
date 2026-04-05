@@ -55,17 +55,67 @@ Each task includes: `prompt.md`, `meta.json` (tier=raw, verification_status=pend
 
 ---
 
+## Late Session Update (same date)
+
+### 7 new examples added (behavioral-veriloga-eval)
+
+New circuit categories covering voltage-domain only, no idt/idtmod:
+
+| example | category |
+|---|---|
+| `sample_hold` | sample-hold (new) |
+| `xor_phase_detector` | phase-detector (new) |
+| `pfd_updn` | phase-detector (new) |
+| `gray_counter_4b` | digital-logic |
+| `mux_4to1` | digital-logic |
+| `flash_adc_3b` | data-converter |
+| `serializer_8b` | comms (new) |
+
+Each includes `.va` + `tb_*.scs` + `validate_*.py` + benchmark task stub. `manifest.json` updated to 21 entries.
+
+### Benchmark structure clarified
+
+Benchmark has **four task families**, not just end-to-end:
+
+| family | current count |
+|---|---|
+| `end-to-end` | 26 |
+| `spec-to-va` | 12 |
+| `bugfix` | 4 |
+| `tb-generation` | 4 |
+| **total** | **46** |
+
+`spec-to-va`, `bugfix`, `tb-generation` currently lack gold answers and automated checks — this is the next critical gap to close.
+
+### Documents updated
+
+- `WORK_ASSIGNMENT.md`: rewritten to cover all four task families; both students have end-to-end parity + spec-to-va gold answers + bugfix/tb-generation verification tasks
+- `BENCHMARK_EXPANSION_PLAN.md`: updated to reflect 4-family structure, corrected current state (46 tasks), revised student assignment section
+- `BENCHMARK_RESULT_TABLE.md`: added tracking tables for spec-to-va (13 rows), bugfix (4 rows), tb-generation (4 rows)
+
+---
+
 ## Next Steps
 
-1. **shenbufan**: run lfsr_smoke, clk_burst_gen_smoke in EVAS → fill result table rows → PR
-2. **liangyuxuan**: run dac_binary_clk_4b_smoke, adc_dac_ideal_4b_smoke → fill result table → PR
-3. **team**: PR `feat/new-benchmark-seeds-2026-04-05` → upstream (Arcadia-1)
-4. **team**: run any model (Claude/GPT) on a subset and start filling AI_MODEL_EVAL_TABLE.md
-5. **team**: write related work section using papers already in `referencepaper/`
-6. **team**: build the 3 required paper figures (system overview, workflow, EVAS parity loop)
+### shenbufan
+1. Run EVAS + Spectre parity for: `lfsr_smoke`, `clk_burst_gen_smoke`, `digital_basics_smoke`, `gray_counter_4b_smoke`, `mux_4to1_smoke`, `xor_pd_smoke`, `pfd_updn_smoke`
+2. Write gold `.va` for: `clk_divider`, `prbs7`, `therm2bin`, `bbpd`, `multimod_divider` (spec-to-va)
+3. Write gold fixes for: `bad_bus_output_loop`, `missing_transition_outputs` (bugfix)
+
+### liangyuxuan
+1. Run EVAS + Spectre parity for: `dac_binary_clk_4b_smoke`, `adc_dac_ideal_4b_smoke`, `dwa_ptr_gen_smoke`, `noise_gen_smoke`, `dac_therm_16b_smoke`, `sar_adc_dac_weighted_8b_smoke`, `sample_hold_smoke`, `flash_adc_3b_smoke`, `serializer_8b_smoke`
+2. Write gold `.va` for: `sar_logic`, `sar_12bit`, `d2b_4bit`, `pipeline_stage`, `segmented_dac`, `cdac_cal` (spec-to-va)
+3. Write gold `.scs` for: `clk_div_min_tb`, `comparator_offset_tb`, `dac_ramp_tb`, `inl_dnl_probe` (tb-generation)
+
+### team
+1. PR `feat/new-benchmark-seeds-2026-04-05` → upstream (Arcadia-1)
+2. Run AI model evaluation on all four task families once gold answers exist
+3. Fill `AI_MODEL_EVAL_TABLE.md`
+4. Write related work section
+5. Build 3 paper figures
 
 ---
 
 ## Blockers
 
-None known. All task assets are created; actual EVAS simulation runs are pending team action.
+None known. Infrastructure is ready; gold answers and parity runs are pending student action.

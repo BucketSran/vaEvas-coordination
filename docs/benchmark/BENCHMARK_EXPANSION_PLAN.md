@@ -1,6 +1,21 @@
-# Benchmark Expansion Plan: 15 → 200 Tasks
+# Benchmark Expansion Plan: 46 → 200 Tasks
 
-This document describes the phased strategy for expanding the vaEvas benchmark from the current 15 tasks to a target of 200 verified tasks.
+This document describes the phased strategy for expanding the vaEvas benchmark from the current 46 tasks to a target of 200 verified tasks across all four task families.
+
+---
+
+## Benchmark Structure
+
+The vaEvas benchmark has **four task families**, each testing a different AI capability:
+
+| family | what it tests | AI output | key checks |
+|---|---|---|---|
+| `end-to-end` | spec → DUT + TB + simulation | `.va` + `.scs` | compile + sim_correct + EVAS↔Spectre parity |
+| `spec-to-va` | spec → DUT only | `.va` | compile + behavioral correctness |
+| `bugfix` | fix a broken `.va` | corrected `.va` | compile + bug actually fixed |
+| `tb-generation` | write a testbench for a given DUT | `.scs` | TB compile + waveform produced |
+
+All four families count toward the 200-task target.
 
 ---
 
@@ -11,115 +26,117 @@ All benchmark tasks must satisfy:
 1. **EVAS-compatible (voltage-domain only)**
    - Uses `V() <+`, `@(cross(...))`, `@(initial_step)`, `@(timer(...))`, `transition()`
    - Does NOT use `I() <+`, `ddt()`, `idt()`, `idtmod()`, `laplace_nd()`, `slew()`, `flicker_noise()`
-   - See `veriloga-skills/veriloga/SKILL.md` for the full construct list
-2. **Every task has EVAS + Spectre parity validation** (`parity_required: true`)
-3. **Every task has at least 2 meaningful `sim_correct` checks**
-4. **Tier progression**: `raw → verified` requires EVAS run + Spectre cross-check
+2. **`end-to-end` tasks require EVAS + Spectre parity** (`parity_required: true`)
+3. **Every task has at least 2 meaningful `sim_correct` checks** (no `manual_review_expected_output` placeholders)
+4. **Every task needs a gold reference answer** before it can be used to evaluate AI models
+5. **Tier progression**: `raw → verified` requires EVAS run + (for end-to-end) Spectre cross-check
 
 ---
 
 ## Current State (as of 2026-04-05)
 
-| status | count | categories |
-|---|---|---|
-| verified (tier=verified, passed) | 6 | pll-closed-loop (×5), end-to-end-task (×1) |
-| raw (tier=raw, pending) | 22 | digital-logic, data-converter, calibration, stimulus, measurement, sample-hold, phase-detector, comms |
+| family | total tasks | verified | raw/pending | gold answer exists |
+|---|---|---|---|---|
+| `end-to-end` | 26 | 6 | 20 | 21 (examples) |
+| `spec-to-va` | 12 | 0 | 12 | 0 (all `manual_review`) |
+| `bugfix` | 4 | 0 | 4 | 0 |
+| `tb-generation` | 4 | 0 | 4 | 0 |
+| **total** | **46** | **6** | **40** | **21** |
+
+**Critical gap**: spec-to-va, bugfix, tb-generation have no gold answers and no automated checks — the two students' first job is to close this gap.
 
 ---
 
-## Phase 1: Deepen Existing Categories (target: ~60 tasks)
+## Phase 1: Close Infrastructure Gaps + First Verification Wave (target: ~80 tasks)
 
-**Goal**: add difficulty variants to already-covered circuit types.
-**Prerequisite**: current 22 raw tasks promoted to verified first.
+**Goal**: make all 46 existing tasks evaluatable (have gold + automated checks), then push to verified.
 
-### Expansion list
+### Step 1a: Gold answers + automated checks (students' work)
 
-| base example | new variants | new task count |
+| family | tasks needing gold | responsible |
 |---|---|---|
-| comparator (basic) | hysteresis variant, offset-search, strongarm, rail-to-rail | +4 |
-| dac_binary_clk_4b | 6b, 8b, with mismatch model | +3 |
-| dac_therm_16b | with DWA enabled, with element mismatch | +2 |
-| sar_adc_dac_weighted_8b | 10b, with noise floor, with offset | +3 |
-| flash_adc_3b | 4b, with offset/gain error | +2 |
-| lfsr | 16-bit, 23-bit, with enable gating | +3 |
-| gray_counter_4b | 8-bit, with load, with async reset | +3 |
-| clk_div | divide-by-3, divide-by-N parametric | +2 |
-| pfd_updn | with dead-zone, with reset delay | +2 |
-| xor_phase_detector | with frequency offset test, lock range check | +2 |
-| sample_hold | double-sampled, with droop model | +2 |
-| serializer_8b | deserializer_8b, 16b variant | +2 |
-| noise_gen | correlated noise pair, chirp generator | +2 |
-| gain_extraction | gain vs. frequency sweep | +2 |
+| `spec-to-va` | all 12 | shenbufan (digital/pll) + liangyuxuan (adc/dac) |
+| `bugfix` | all 4 | shenbufan |
+| `tb-generation` | all 4 | liangyuxuan |
 
-**Phase 1 net new tasks**: ~34 → total ~56
+Concretely: replace every `manual_review_expected_output` in `checks.yaml` with a real behavioral check. Write the gold `.va` or `.scs` file.
+
+### Step 1b: EVAS + Spectre parity (end-to-end tasks, students' work)
+
+20 end-to-end tasks are `raw/pending`. Both students run EVAS + Spectre on their assigned tasks to push them to `verified`.
+
+### Step 1c: Add ~34 new tasks (from existing examples)
+
+Each of the 21 examples can produce 3–4 tasks by varying difficulty. Target: +34 end-to-end tasks.
+
+| example | new variants |
+|---|---|
+| comparator | hysteresis, offset-search, strongarm, rail-to-rail |
+| dac_binary_clk_4b | 6b, 8b, with mismatch |
+| sar_adc_dac_weighted_8b | 10b, with noise, with offset |
+| lfsr | 16b, 23b, with enable |
+| gray_counter_4b | 8b, with load, async reset |
+| flash_adc_3b | 4b, with offset |
+| pfd_updn | with dead-zone, with reset delay |
+| serializer_8b | deserializer_8b, 16b |
+| (others) | 1–2 variants each |
+
+**Phase 1 total: ~80 tasks**
 
 ---
 
-## Phase 2: New Circuit Domains (target: ~120 tasks)
+## Phase 2: New Circuit Domains (target: ~130 tasks)
 
-**Goal**: add 5 new circuit categories not yet present in the benchmark.
-**Prerequisite**: Phase 1 parity flow running smoothly.
+**Goal**: add 5 new circuit categories with full example + task coverage.
 
-### New categories and example circuits
-
-| category | example circuits (EVAS-compatible behavioral) | estimated tasks |
+| new category | representative circuits | est. tasks |
 |---|---|---|
-| **oscillator** | ring_osc_3stage, vco_behavioral (timer-based, no idtmod), relaxation_osc | 12 |
-| **frequency-divider** | div2, div4, dual_modulus_div (÷N/÷N+1) | 8 |
-| **pipeline-logic** | 4-stage pipeline register, forwarding logic | 8 |
-| **encoder-decoder** | priority_encoder_4b, thermometer_to_binary_8b, manchester_encoder | 10 |
-| **power-switch** | behavioral transmission gate, programmable gain switch | 8 |
+| oscillator | ring_osc_3stage, vco_behavioral (timer-based), relaxation_osc | 12 |
+| frequency-divider | div2, div4, dual_modulus_div | 8 |
+| encoder-decoder | priority_encoder_4b, therm2bin_8b, manchester_encoder | 10 |
+| pipeline-logic | 4-stage pipeline register, forwarding logic | 8 |
+| power-switch | behavioral transmission gate, programmable gain switch | 8 |
 
-**Note on oscillator**: VCO in behavioral EVAS mode uses `@(timer(...))` with variable period set by `V(ctrl)` and `$bound_step()` — does NOT require `idtmod()`.
+For each new category: write example → define tasks across all 4 families (end-to-end + spec-to-va variants + bugfix with introduced bugs + tb-generation).
 
-**Phase 2 net new tasks**: ~46 → total ~102
+**Phase 2 net new tasks: ~46 → total ~130**
 
 ---
 
-## Phase 3: System-Level and AI-Driven (target: ~200 tasks)
+## Phase 3: System-Level + AI-Driven Curation (target: ~200 tasks)
 
-**Goal**: add multi-block integration tasks and use the AI evaluation loop to generate additional verified tasks.
-
-### System-level tasks
+### System-level end-to-end tasks (~20)
 
 | system | components | difficulty |
 |---|---|---|
-| charge-pump PLL behavioral | PFD + CP model + divider + VCO behavioral | hard |
-| delta-sigma modulator 1st order | accumulator + 1b DAC + error feedback | hard |
-| pipelined ADC 2-stage | MDAC behavioral × 2 + flash + digital correction | expert |
-| serializer + clock recovery | serializer + CDR behavioral | hard |
+| charge-pump PLL behavioral | PFD + CP + divider + VCO | hard |
+| delta-sigma modulator 1st order | accumulator + 1b DAC + feedback | hard |
+| pipelined ADC 2-stage | MDAC×2 + flash + digital correction | expert |
+| serializer + CDR | serializer + clock recovery | hard |
 
-**Estimated**: 20 tasks
+### AI-generation-driven tasks (~30)
 
-### AI-generation-driven tasks
-
-Once the evaluation framework is running, AI-generated Verilog-A that passes all checks can be promoted to benchmark:
+Once the evaluation pipeline is running, high-quality AI outputs that pass all checks can be curated into the benchmark:
 
 ```
-model generates .va → EVAS compile + sim_correct passes → Spectre parity passes → human review → PR
+model output → EVAS compile + sim_correct → Spectre parity → human review → benchmark PR
 ```
 
-Target: 30–40 additional tasks from AI output curation.
+This directly supports the paper claim: "our framework enables AI-assisted benchmark construction."
 
-**Phase 3 net new tasks**: ~50–60 → total **~150–165**
+**Phase 3 net new tasks: ~50 → total ~200**
 
 ---
 
-## Path to 200
+## Target Distribution at 200
 
-| source | task count |
+| family | target count |
 |---|---|
-| Current tasks (15) | 15 |
-| Phase 1 additions | +41 |
-| Phase 2 additions | +46 |
-| Phase 3 system tasks | +20 |
-| Phase 3 AI-driven curation | +40 |
-| Parametric sweep variants (difficulty levels) | +38 |
-| **Total** | **~200** |
-
----
-
-## Category Coverage Target at 200
+| `end-to-end` | 80 |
+| `spec-to-va` | 60 |
+| `bugfix` | 30 |
+| `tb-generation` | 30 |
+| **total** | **200** |
 
 | category | target count |
 |---|---|
@@ -135,7 +152,7 @@ Target: 30–40 additional tasks from AI output curation.
 | encoder-decoder | 15 |
 | comms | 15 |
 | power-switch | 10 |
-| **Total** | **~195** |
+| **total** | **~195** |
 
 ---
 
@@ -143,19 +160,19 @@ Target: 30–40 additional tasks from AI output curation.
 
 | bottleneck | mitigation |
 |---|---|
-| Every task needs a verified EVAS example | Write examples first; parity is parallel (2 students) |
-| Spectre parity is manual per-task effort | Batch by category; reuse testbench templates |
-| `sim_correct` checks need domain knowledge | Write checks from example `validate_*.py` scripts |
-| AI-driven tasks require human review gate | Set threshold: dut_compile + sim_correct + parity all pass |
+| spec-to-va has no automated checks | students write gold `.va` + convert checks |
+| every new example needs EVAS + Spectre validation | batch by category; reuse testbench templates |
+| bugfix gold answers require domain knowledge | start from known EVAS pitfalls (wrong genvar/integer, missing transition) |
+| AI-driven tasks need human review gate | require all 3 executable checks to pass before merging |
 
 ---
 
-## Assignment
+## Assignment Summary
 
 | phase | who |
 |---|---|
-| Phase 1 example writing | Claude Code (automated) |
-| Phase 1 parity validation | new team members (EVAS + Spectre/Virtuoso) |
-| Phase 2 example writing | Claude Code + team review |
-| Phase 2–3 parity validation | new team members |
+| Phase 1 gold answers + parity | shenbufan + liangyuxuan (see WORK_ASSIGNMENT.md) |
+| Phase 1 new example variants | automated (Claude Code) |
+| Phase 2 new circuit categories | Claude Code + team review |
+| Phase 2–3 parity validation | students |
 | AI model evaluation runs | full team |

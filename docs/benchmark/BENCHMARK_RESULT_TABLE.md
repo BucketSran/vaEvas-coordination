@@ -74,6 +74,98 @@ For closed-loop or dual-validation cases, also fill:
 
 ---
 
+## spec-to-va Results
+
+Tracks AI-generated `.va` files evaluated against spec-to-va tasks.
+
+### Required Columns
+
+1. `owner`
+2. `task_name`
+3. `category`
+4. `task_path`
+5. `gold_answer_exists` (`yes` / `no`)
+6. `dut_compile` (`pass` / `fail` / `[TODO]`)
+7. `sim_correct` (`pass` / `fail` / `manual` / `[TODO]`)
+8. `automated_check` (`yes` / `no` — whether `manual_review_expected_output` has been replaced)
+9. `verification_status` (`pending` / `passed` / `failed`)
+10. `result_path`
+11. `pr_link`
+12. `notes`
+
+### Table
+
+| owner | task_name | category | task_path | gold_answer_exists | dut_compile | sim_correct | automated_check | verification_status | result_path | pr_link | notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| shenbufan | clk_divider | digital-logic | `tasks/spec-to-va/voltage/digital-logic/clk_divider` | `no` | `[TODO]` | `[TODO]` | `no` | `pending` | `[TODO]` | `[TODO]` | needs gold .va + automated check |
+| shenbufan | prbs7 | digital-logic | `tasks/spec-to-va/voltage/digital-logic/prbs7` | `no` | `[TODO]` | `[TODO]` | `no` | `pending` | `[TODO]` | `[TODO]` | needs gold .va + automated check |
+| shenbufan | therm2bin | digital-logic | `tasks/spec-to-va/voltage/digital-logic/therm2bin` | `no` | `[TODO]` | `[TODO]` | `no` | `pending` | `[TODO]` | `[TODO]` | needs gold .va + automated check |
+| shenbufan | bbpd | pll-clock | `tasks/spec-to-va/voltage/pll-clock/bbpd` | `no` | `[TODO]` | `[TODO]` | `no` | `pending` | `[TODO]` | `[TODO]` | bang-bang phase detector; needs gold .va |
+| shenbufan | multimod_divider | pll-clock | `tasks/spec-to-va/voltage/pll-clock/multimod_divider` | `no` | `[TODO]` | `[TODO]` | `no` | `pending` | `[TODO]` | `[TODO]` | needs gold .va + automated check |
+| liangyuxuan | sar_logic | adc-sar | `tasks/spec-to-va/voltage/adc-sar/sar_logic` | `no` | `[TODO]` | `[TODO]` | `no` | `pending` | `[TODO]` | `[TODO]` | needs gold .va + automated check |
+| liangyuxuan | sar_12bit | adc-sar | `tasks/spec-to-va/voltage/adc-sar/sar_12bit` | `no` | `[TODO]` | `[TODO]` | `no` | `pending` | `[TODO]` | `[TODO]` | needs gold .va + automated check |
+| liangyuxuan | d2b_4bit | adc-sar | `tasks/spec-to-va/voltage/adc-sar/d2b_4bit` | `no` | `[TODO]` | `[TODO]` | `no` | `pending` | `[TODO]` | `[TODO]` | needs gold .va + automated check |
+| liangyuxuan | pipeline_stage | adc-sar | `tasks/spec-to-va/voltage/adc-sar/pipeline_stage` | `no` | `[TODO]` | `[TODO]` | `no` | `pending` | `[TODO]` | `[TODO]` | needs gold .va + automated check |
+| liangyuxuan | segmented_dac | dac | `tasks/spec-to-va/voltage/dac/segmented_dac` | `no` | `[TODO]` | `[TODO]` | `no` | `pending` | `[TODO]` | `[TODO]` | needs gold .va + automated check |
+| liangyuxuan | cdac_cal | dac | `tasks/spec-to-va/voltage/dac/cdac_cal` | `no` | `[TODO]` | `[TODO]` | `no` | `pending` | `[TODO]` | `[TODO]` | needs gold .va + automated check |
+| team | sc_integrator | amplifier-filter | `tasks/spec-to-va/voltage/amplifier-filter/sc_integrator` | `no` | `[TODO]` | `[TODO]` | `no` | `pending` | `[TODO]` | `[TODO]` | switched-cap integrator; needs gold .va |
+| team | bg_cal | calibration | `tasks/spec-to-va/voltage/calibration/bg_cal` | `no` | `[TODO]` | `[TODO]` | `no` | `pending` | `[TODO]` | `[TODO]` | background calibration; needs gold .va |
+
+---
+
+## bugfix Results
+
+Tracks AI-generated bug fixes evaluated against bugfix tasks.
+
+### Required Columns
+
+1. `owner`
+2. `task_name`
+3. `bug_type`
+4. `task_path`
+5. `gold_fix_exists` (`yes` / `no`)
+6. `dut_compile` (`pass` / `fail` / `[TODO]`)
+7. `bug_fixed` (`pass` / `fail` / `[TODO]`)
+8. `verification_status`
+9. `notes`
+
+### Table
+
+| owner | task_name | bug_type | task_path | gold_fix_exists | dut_compile | bug_fixed | verification_status | notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| shenbufan | bad_bus_output_loop | wrong vector assignment `V(DOUT)<+` vs `V(DOUT[i])<+` | `tasks/bugfix/voltage/bad_bus_output_loop` | `no` | `[TODO]` | `[TODO]` | `pending` | needs gold `dut_fixed.va` |
+| shenbufan | missing_transition_outputs | output port missing `transition()` wrapper | `tasks/bugfix/voltage/missing_transition_outputs` | `no` | `[TODO]` | `[TODO]` | `pending` | needs gold `dut_fixed.va` |
+| team | mixed_domain_cdac_bug | mixed `I()<+` and voltage-domain constructs | `tasks/bugfix/voltage/mixed_domain_cdac_bug` | `no` | `[TODO]` | `[TODO]` | `pending` | needs gold `dut_fixed.va` |
+| team | spectre_port_discipline | `inout electrical A, B` sharing — Spectre rejects | `tasks/bugfix/voltage/spectre_port_discipline` | `no` | `[TODO]` | `[TODO]` | `pending` | needs gold `dut_fixed.va` |
+
+---
+
+## tb-generation Results
+
+Tracks AI-generated testbenches evaluated against tb-generation tasks.
+
+### Required Columns
+
+1. `owner`
+2. `task_name`
+3. `task_path`
+4. `gold_tb_exists` (`yes` / `no`)
+5. `tb_compile` (`pass` / `fail` / `[TODO]`)
+6. `tran_generated` (`pass` / `fail` / `[TODO]`)
+7. `verification_status`
+8. `notes`
+
+### Table
+
+| owner | task_name | task_path | gold_tb_exists | tb_compile | tran_generated | verification_status | notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| liangyuxuan | clk_div_min_tb | `tasks/tb-generation/voltage/clk_div_min_tb` | `no` | `[TODO]` | `[TODO]` | `pending` | needs gold `tb_*.scs` + EVAS run |
+| liangyuxuan | comparator_offset_tb | `tasks/tb-generation/voltage/comparator_offset_tb` | `no` | `[TODO]` | `[TODO]` | `pending` | needs gold `tb_*.scs` + EVAS run |
+| liangyuxuan | dac_ramp_tb | `tasks/tb-generation/voltage/dac_ramp_tb` | `no` | `[TODO]` | `[TODO]` | `pending` | needs gold `tb_*.scs` + EVAS run |
+| liangyuxuan | inl_dnl_probe | `tasks/tb-generation/voltage/testbench/inl_dnl_probe` | `no` | `[TODO]` | `[TODO]` | `pending` | needs gold `tb_*.scs` + EVAS run |
+
+---
+
 ## Fill Rules
 
 1. Use `pass` / `fail` / `N/A` where possible, not free-form wording.
