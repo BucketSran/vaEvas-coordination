@@ -9,29 +9,11 @@
 5. 按 [ONBOARDING_CHECKLIST_TEAM.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/ONBOARDING_CHECKLIST_TEAM.md) 配好 Git 和本地环境
 6. 按 [FIRST_TASK_EXAMPLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/FIRST_TASK_EXAMPLE.md) 跑通第一个小任务
 
-如果你当前已经做到：
+如果 Cadence 环境已经通，但还没找到仓库路径：
 
-1. VNC 能连上跳板机
-2. 能 `ssh -X` 到目标机
-3. `source /home/cshrc/.cshrc.cadence.IC618SP201` 之后 `which spectre` 和 `which virtuoso` 正常
-
-那你下一步最该做的事，不是继续盲猜命令，而是先问清楚这几个仓库在服务器上的实际路径：
-
-1. `vaEvas`
-2. `behavioral-veriloga-eval`
-3. `sshConnect/virtuoso-bridge-lite`
-
-可直接发这段：
-
-```text
-我现在已经成功做到这一步了：
-1. VNC 能连上 thu-jin
-2. 能 ssh -X 到 thu-wu
-3. source /home/cshrc/.cshrc.cadence.IC618SP201 之后，which spectre 和 which virtuoso 都正常
-
-现在我这边还没找到项目仓库目录，比如 vaEvas、behavioral-veriloga-eval、sshConnect/virtuoso-bridge-lite。
-麻烦告诉我这些仓库在服务器上的实际路径，或者我应该从哪里 clone / 拷贝到自己的目录。
-```
+1. 先看 [REPOSITORIES.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/project/REPOSITORIES.md)
+2. 再看 [2026-04-08_onboarding-path-blocker.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/status/2026-04-08_onboarding-path-blocker.md)
+3. 不要继续在 VNC / SSH / Cadence 上反复试错
 
 ## 先不要做什么
 

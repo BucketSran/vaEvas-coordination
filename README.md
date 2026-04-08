@@ -29,6 +29,12 @@
 
 如果你只有 10 分钟，就先只看第 1 和第 2 个文件。
 
+如果当前使用者是 `Bucketsran`：
+
+1. 你默认是中间层负责人
+2. 你主要关心分工、优先级、KPI、风险、同步口径
+3. 每次同步本仓库时，优先看 [BUCKETSRAN_SYNC_PROFILE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/ops/BUCKETSRAN_SYNC_PROFILE.md)
+
 ## 你今天要做什么
 
 新人第一轮任务可以压缩成 5 步：
@@ -109,6 +115,7 @@
 
 1. [AI_PROMPT_STARTER.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/AI_PROMPT_STARTER.md)
 2. [FIRST_TASK_EXAMPLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/FIRST_TASK_EXAMPLE.md)
+3. [BUCKETSRAN_SYNC_PROFILE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/ops/BUCKETSRAN_SYNC_PROFILE.md)
 
 ## 推荐阅读路径
 

@@ -43,19 +43,10 @@
 2. `behavioral-veriloga-eval`
 3. `sshConnect/virtuoso-bridge-lite`
 
-如果你已经验证过 VNC、SSH X11 和 Cadence 环境，但还没找到仓库，可以直接发：
+如果环境已通但仓库未定位，直接参考：
 
-```text
-我现在已经成功做到这一步了：
-1. VNC 能连上 thu-jin
-2. 能 ssh -X 到 thu-wu
-3. source /home/cshrc/.cshrc.cadence.IC618SP201 之后，which spectre 和 which virtuoso 都正常
-
-现在我这边还没找到项目仓库目录，比如 vaEvas、behavioral-veriloga-eval、sshConnect/virtuoso-bridge-lite。
-麻烦告诉我这些仓库在服务器上的实际路径，或者我应该从哪里 clone / 拷贝到自己的目录。
-```
-
-拿到路径后再继续下面步骤。
+1. [REPOSITORIES.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/project/REPOSITORIES.md)
+2. [2026-04-08_onboarding-path-blocker.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/status/2026-04-08_onboarding-path-blocker.md)
 
 ## 3. Git 初始化检查
 
