@@ -61,6 +61,15 @@ ssh <your-host-alias>
 
 示例：`<repo>` 可以是 `/Users/<your-user>/Documents/TsingProject`。
 
+如果你当前是在服务器上直接做环境接入，先不要假设这些目录已经存在。
+应先确认：
+
+1. 服务器上的团队共享目录在哪里
+2. `vaEvas`、`behavioral-veriloga-eval`、`sshConnect/virtuoso-bridge-lite` 的实际路径分别是什么
+3. 你应该直接进入共享目录，还是先 clone 到自己的 home 目录
+
+常见误区不是 Cadence 没配好，而是已经连上机器了，但还不知道仓库究竟放在哪。
+
 ## 3.3 必读文档
 
 1. `onboarding/ONBOARDING_CHECKLIST_TEAM.md`

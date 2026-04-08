@@ -1,12 +1,37 @@
 # Quick Start
 
-## 你如果是第一次加入，只做这 5 步
+## 你如果是第一次加入，只做这 6 步
 
-1. 读 [00_START_HERE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/00_START_HERE.md)
-2. 读 [AI_ONE_CLICK_TUNNEL_AND_LOOP_PROMPTS.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/AI_ONE_CLICK_TUNNEL_AND_LOOP_PROMPTS.md)
-3. 让 AI 用这些文档给你解释“项目目标 + 你的任务”
-4. 按 [ONBOARDING_CHECKLIST_TEAM.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/ONBOARDING_CHECKLIST_TEAM.md) 配好 Git 和本地环境
-5. 按 [FIRST_TASK_EXAMPLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/FIRST_TASK_EXAMPLE.md) 跑通第一个小任务
+1. 先确认服务器上的实际仓库路径，或者确认应该从哪里 clone 到自己的目录
+2. 读 [00_START_HERE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/00_START_HERE.md)
+3. 读 [AI_ONE_CLICK_TUNNEL_AND_LOOP_PROMPTS.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/AI_ONE_CLICK_TUNNEL_AND_LOOP_PROMPTS.md)
+4. 让 AI 用这些文档给你解释“项目目标 + 你的任务”
+5. 按 [ONBOARDING_CHECKLIST_TEAM.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/ONBOARDING_CHECKLIST_TEAM.md) 配好 Git 和本地环境
+6. 按 [FIRST_TASK_EXAMPLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/FIRST_TASK_EXAMPLE.md) 跑通第一个小任务
+
+如果你当前已经做到：
+
+1. VNC 能连上跳板机
+2. 能 `ssh -X` 到目标机
+3. `source /home/cshrc/.cshrc.cadence.IC618SP201` 之后 `which spectre` 和 `which virtuoso` 正常
+
+那你下一步最该做的事，不是继续盲猜命令，而是先问清楚这几个仓库在服务器上的实际路径：
+
+1. `vaEvas`
+2. `behavioral-veriloga-eval`
+3. `sshConnect/virtuoso-bridge-lite`
+
+可直接发这段：
+
+```text
+我现在已经成功做到这一步了：
+1. VNC 能连上 thu-jin
+2. 能 ssh -X 到 thu-wu
+3. source /home/cshrc/.cshrc.cadence.IC618SP201 之后，which spectre 和 which virtuoso 都正常
+
+现在我这边还没找到项目仓库目录，比如 vaEvas、behavioral-veriloga-eval、sshConnect/virtuoso-bridge-lite。
+麻烦告诉我这些仓库在服务器上的实际路径，或者我应该从哪里 clone / 拷贝到自己的目录。
+```
 
 ## 先不要做什么
 

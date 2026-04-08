@@ -7,8 +7,9 @@
 第一天至少完成：
 
 1. 理解项目目标与协作规则
-2. 完成 Git remote 检查
-3. 跑通一条最小双验证流程（EVAS 预检 + Spectre 对照）
+2. 确认代码仓库实际路径或 clone 来源
+3. 完成 Git remote 检查
+4. 跑通一条最小双验证流程（EVAS 预检 + Spectre 对照）
 
 ---
 
@@ -24,6 +25,37 @@
 8. `docs/benchmark/EXAMPLE_TO_BENCHMARK_WORKFLOW.md`
 
 ---
+
+## 3. Git 初始化检查
+
+## 3.0 先确认仓库路径
+
+在做任何 `git remote -v` 或 `cd <repo>/...` 之前，先确认以下信息：
+
+1. 服务器上是否已经有团队共享仓库目录
+2. 这些目录的实际路径分别是什么
+3. 如果没有现成目录，应该从哪个远端地址 clone
+4. 是否要求先拷贝到自己的 home 目录再开发
+
+至少要确认这几个路径中的一种真实来源：
+
+1. `vaEvas`
+2. `behavioral-veriloga-eval`
+3. `sshConnect/virtuoso-bridge-lite`
+
+如果你已经验证过 VNC、SSH X11 和 Cadence 环境，但还没找到仓库，可以直接发：
+
+```text
+我现在已经成功做到这一步了：
+1. VNC 能连上 thu-jin
+2. 能 ssh -X 到 thu-wu
+3. source /home/cshrc/.cshrc.cadence.IC618SP201 之后，which spectre 和 which virtuoso 都正常
+
+现在我这边还没找到项目仓库目录，比如 vaEvas、behavioral-veriloga-eval、sshConnect/virtuoso-bridge-lite。
+麻烦告诉我这些仓库在服务器上的实际路径，或者我应该从哪里 clone / 拷贝到自己的目录。
+```
+
+拿到路径后再继续下面步骤。
 
 ## 3. Git 初始化检查
 
@@ -52,7 +84,8 @@ git push origin main
 
 ## 4. 执行前置环境（必须先做）
 
-在进入 bridge 和双仿真步骤前，先完成最小环境检查：
+在进入 bridge 和双仿真步骤前，先完成最小环境检查。
+这里默认前一节已经确认了仓库路径，否则下面的 `cd <repo>/...` 没法执行：
 
 1. Python 3 可用：`python3 --version`
 2. EVAS 仓库依赖已安装（含 `.venv`）

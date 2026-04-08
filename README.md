@@ -31,12 +31,13 @@
 
 ## 你今天要做什么
 
-新人第一轮任务可以压缩成 4 步：
+新人第一轮任务可以压缩成 5 步：
 
-1. 读入口文档，知道项目和仓库分工
-2. 认领一个 `example`
-3. 按 `example -> closed loop -> benchmark seed` 跑一轮
-4. 最后提一个 PR
+1. 先确认服务器上的实际仓库路径，或者确认应该从哪里 clone
+2. 读入口文档，知道项目和仓库分工
+3. 认领一个 `example`
+4. 按 `example -> closed loop -> benchmark seed` 跑一轮
+5. 最后提一个 PR
 
 一句话版交付定义：
 
