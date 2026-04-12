@@ -15,17 +15,26 @@
 
 `这个仓库回答“我们在做什么、你今天该做什么、做完后怎么提交”。`
 
+如果你进入项目后需要开始真正拆任务、记执行证据、写 brief/kpi/plan/log/review，请继续进入：
+
+1. [worksche/README.md](/Users/bucketsran/Documents/TsingProject/vaEvas/worksche/README.md)
+
 ## 先看哪里
 
 如果你只想最快开始，不要先把所有文档都读一遍。
 
 按这个顺序看：
 
-1. [00_STRUCTURE_GUIDE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/00_STRUCTURE_GUIDE.md)
-2. [00_START_HERE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/00_START_HERE.md)
-3. [QUICK_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/QUICK_START.md)
-4. [ONBOARDING_CHECKLIST_TEAM.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/ONBOARDING_CHECKLIST_TEAM.md)
-5. [00_DOC_MAP.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/00_DOC_MAP.md)
+1. [00_STRUCTURE_GUIDE.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/00_STRUCTURE_GUIDE.md)
+2. [00_START_HERE.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/onboarding/00_START_HERE.md)
+3. [QUICK_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/onboarding/QUICK_START.md)
+4. [ONBOARDING_CHECKLIST_TEAM.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/onboarding/ONBOARDING_CHECKLIST_TEAM.md)
+5. [00_DOC_MAP.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/00_DOC_MAP.md)
+
+如果你遇到“分工文档里有任务名，但自己本地仓库看不到”的情况，不要先猜自己拉错仓库。先看：
+
+1. [2026-04-12_repo-visibility-note.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/status/2026-04-12_repo-visibility-note.md)
+2. [REPOSITORIES.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/project/REPOSITORIES.md)
 
 如果你只有 10 分钟，就先只看第 1 和第 2 个文件。
 
@@ -33,7 +42,7 @@
 
 1. 你默认是中间层负责人
 2. 你主要关心分工、优先级、KPI、风险、同步口径
-3. 每次同步本仓库时，优先看 [BUCKETSRAN_SYNC_PROFILE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/ops/BUCKETSRAN_SYNC_PROFILE.md)
+3. 每次同步本仓库时，优先看 [BUCKETSRAN_SYNC_PROFILE.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/ops/BUCKETSRAN_SYNC_PROFILE.md)
 
 ## 你今天要做什么
 
@@ -53,7 +62,7 @@
 
 `vaEvas` 相关工作通常分布在 4 个仓库：
 
-1. `vaEvas-coordination`
+1. `coordination`
    管协作、分工、入口文档、流程和同步节奏
 2. `EVAS`
    管模拟器能力和语义实现
@@ -113,20 +122,20 @@
 
 优先用这些入口：
 
-1. [AI_PROMPT_STARTER.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/AI_PROMPT_STARTER.md)
-2. [FIRST_TASK_EXAMPLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/FIRST_TASK_EXAMPLE.md)
-3. [BUCKETSRAN_SYNC_PROFILE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/ops/BUCKETSRAN_SYNC_PROFILE.md)
+1. [AI_PROMPT_STARTER.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/onboarding/AI_PROMPT_STARTER.md)
+2. [FIRST_TASK_EXAMPLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/onboarding/FIRST_TASK_EXAMPLE.md)
+3. [BUCKETSRAN_SYNC_PROFILE.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/ops/BUCKETSRAN_SYNC_PROFILE.md)
 
 ## 推荐阅读路径
 
 如果你希望按层次看文档，建议这样走：
 
-1. [00_START_HERE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/00_START_HERE.md)
-2. [QUICK_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/QUICK_START.md)
-3. [NEW_MEMBER_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/NEW_MEMBER_START.md)
-4. [PROJECT_OVERVIEW.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/project/PROJECT_OVERVIEW.md)
-5. [REPOSITORIES.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/project/REPOSITORIES.md)
-6. [EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/benchmark/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md)
+1. [00_START_HERE.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/onboarding/00_START_HERE.md)
+2. [QUICK_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/onboarding/QUICK_START.md)
+3. [NEW_MEMBER_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/onboarding/NEW_MEMBER_START.md)
+4. [PROJECT_OVERVIEW.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/project/PROJECT_OVERVIEW.md)
+5. [REPOSITORIES.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/project/REPOSITORIES.md)
+6. [EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/benchmark/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md)
 
 ## 每天开始前看什么
 
@@ -151,10 +160,11 @@
 
 ## 只拿到这个仓库怎么办
 
-如果你当前只拿到了 `vaEvas-coordination`，先不要慌，先按这里走：
+如果你当前只拿到了 `coordination`，先不要慌，先按这里走：
 
-1. [00_START_HERE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/00_START_HERE.md)
-2. [ONBOARDING_CHECKLIST_TEAM.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/ONBOARDING_CHECKLIST_TEAM.md)
-3. [UPLOAD_PACK_NOTE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/ops/UPLOAD_PACK_NOTE.md)
+1. [00_START_HERE.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/onboarding/00_START_HERE.md)
+2. [ONBOARDING_CHECKLIST_TEAM.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/onboarding/ONBOARDING_CHECKLIST_TEAM.md)
+3. [2026-04-12_repo-visibility-note.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/status/2026-04-12_repo-visibility-note.md)
+4. [UPLOAD_PACK_NOTE.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/ops/UPLOAD_PACK_NOTE.md)
 
 这样你至少能先把项目入口、任务边界和第一轮交付搞清楚。

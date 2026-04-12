@@ -64,6 +64,36 @@ Git：
 2. runner
 3. 评分与结果汇总
 
+分支可见性说明：
+
+1. `upstream/main` 可能只包含公开基线，不保证已经合入当前阶段全部 benchmark seed
+2. `coordination` 中的分工、周报、结果表，可能引用团队 fork 或 feature branch 上尚未并回 `upstream/main` 的任务
+3. 如果你在 `coordination` 里看到了某个任务名，但在自己本地的 `upstream/main` 里找不到：
+   - 先不要默认是自己拉错仓库
+   - 先确认自己当前看的 remote 和 branch
+   - 再向负责人确认“当前任务对应的 source branch / fork”
+
+当前已知例子：
+
+1. `coordination` 中分配给 `liangyuxuan` 的若干 `end-to-end` case
+   - 例如 `adc_dac_ideal_4b_smoke`
+   - `dac_binary_clk_4b_smoke`
+   - `dwa_ptr_gen_smoke`
+2. 这些任务不在 `Arcadia-1/behavioral-veriloga-eval` 的当前 `upstream/main`
+3. 它们来自团队后续扩展 benchmark 的分支；当前已知至少有一部分位于分支：
+   - `feat/new-benchmark-seeds-2026-04-05`
+4. 注意：
+   - 分支名前的 remote 前缀在不同人机器上可能不同
+   - 例如有人是 `origin/feat/...`
+   - 也有人可能是 `team/feat/...` 或其他命名
+
+遇到这种情况时，推荐同步顺序：
+
+1. 先在本地执行 `git remote -v`
+2. 再执行 `git branch -a`
+3. 再确认任务是否存在于团队 fork / feature branch
+4. 只有在确认所有团队分支都不存在时，才判断为文档过期或任务名写错
+
 ### 3. veriloga-skills
 
 路径：
@@ -81,11 +111,11 @@ Git：
 2. EVAS/OpenVAF 验证技能
 3. prompt 与技能沉淀
 
-### 4. virtuoso-bridge-lite
+### 4. 共享基础设施：virtuoso-bridge-lite
 
 路径：
 
-1. [virtuoso-bridge-lite](/Users/bucketsran/Documents/TsingProject/sshConnect/virtuoso-bridge-lite)
+1. [virtuoso-bridge-lite](/Users/bucketsran/Documents/TsingProject/iccad/virtuoso-bridge-lite)
 
 Git：
 
@@ -98,11 +128,17 @@ Git：
 2. Virtuoso / Spectre 远程联通
 3. Agent 与脚本侧的 SKILL / 仿真调用入口
 
+说明：
+
+1. 它不是 `vaEvas` 专属代码仓
+2. 当前全仓只保留一份，位于 `iccad/virtuoso-bridge-lite/`
+3. 由 `iccad` 线维护和同步，但供 `TsingProject` 其他项目共享使用
+
 ## 顶层协作仓库
 
 路径：
 
-1. [vaEvas-coordination](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination)
+1. [coordination](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination)
 
 Git：
 
@@ -113,6 +149,12 @@ Git：
 1. 统一项目目标
 2. 统一分工与协作规则
 3. 统一进度同步与对上汇报
+
+重要边界：
+
+1. `coordination` 负责告诉你“当前应该做什么”
+2. 它不天然保证你本地已经拿到了对应代码分支
+3. 所以当 `coordination` 与 `upstream/main` 不一致时，应优先把“分支来源说明”补到 `coordination`，而不是只在私聊里口头同步
 
 ## 工作流文档所在位置
 

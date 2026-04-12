@@ -7,6 +7,7 @@
 1. `../README.md`
 2. `./project/PROJECT_OVERVIEW.md`
 3. `./project/REPOSITORIES.md`
+4. `../status/2026-04-12_repo-visibility-note.md`
 
 ## 2. 第二层：新人执行入口
 
@@ -31,3 +32,4 @@
 1. 上述 4 层按顺序阅读即可，不需要一次看完全部文档。
 2. 只上传本仓库时，优先使用本页列出的本地文件。
 3. 若有完整项目目录，再补充外部 worksche 文档。
+4. 如果文档里出现了你本地仓库里看不到的任务名，优先回到 `REPOSITORIES.md` 和 `2026-04-12_repo-visibility-note.md`，先确认 remote / branch，而不是先假设文档写错。

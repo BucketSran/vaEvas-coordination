@@ -14,6 +14,14 @@ It is intended to support both:
 1. weekly engineering tracking
 2. later paper tables and summary statistics
 
+Before using any row in this table as your immediate local task, confirm that the referenced case already exists in the branch you are currently using.
+
+If `coordination` lists a case but your local `behavioral-veriloga-eval` does not contain it yet:
+
+1. first read [REPOSITORIES.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/project/REPOSITORIES.md)
+2. then read [2026-04-12_repo-visibility-note.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/status/2026-04-12_repo-visibility-note.md)
+3. only after checking remote / branch should you decide whether the row is stale
+
 ---
 
 ## Required Columns

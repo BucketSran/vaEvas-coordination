@@ -10,6 +10,17 @@
 
 如果你只想知道"我现在该做哪个 case"，优先看这份文件。
 
+## 开始前先确认一件事
+
+这份分工单记录的是“当前阶段应该做的任务”，不是“保证已经全部进入你本地 `upstream/main` 的任务”。
+
+如果你在这里看到了某个 case，但自己本地的 `behavioral-veriloga-eval` 看不到对应目录：
+
+1. 先不要默认自己拉错仓库
+2. 先看 [REPOSITORIES.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/project/REPOSITORIES.md)
+3. 再看 [2026-04-12_repo-visibility-note.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/status/2026-04-12_repo-visibility-note.md)
+4. 先确认当前 remote / branch，再继续执行任务
+
 ---
 
 ## 0. benchmark 四个任务族说明
