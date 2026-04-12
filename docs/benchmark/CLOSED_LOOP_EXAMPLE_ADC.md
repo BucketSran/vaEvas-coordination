@@ -248,7 +248,7 @@ At `L3`, the team must also record:
 1. result path
 2. current maturity stage
 3. PR link
-4. corresponding row in [BENCHMARK_RESULT_TABLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/benchmark/BENCHMARK_RESULT_TABLE.md)
+4. corresponding row in [BENCHMARK_RESULT_TABLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/benchmark/BENCHMARK_RESULT_TABLE.md)
 
 ### Pass Condition
 

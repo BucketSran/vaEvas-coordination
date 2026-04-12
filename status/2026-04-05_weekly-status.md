@@ -37,7 +37,7 @@ Each task includes: `prompt.md`, `meta.json` (tier=raw, verification_status=pend
 - Fixed fallback in `task_dir_for()` to raise a clear error instead of silently using a wrong default
 - Fixed manifest.json: corrected all paths from `behavioral-va-eval/` to `behavioral-veriloga-eval/`
 
-### vaEvas-coordination: main
+### coordination: main
 
 - `BENCHMARK_RESULT_TABLE.md`: added 10 new rows (all `raw/pending/benchmark-seed`)
 - Committed stale doc cleanup (old root-level docs deleted, META_JSON_MIN_TEMPLATE added)

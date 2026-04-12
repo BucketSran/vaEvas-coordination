@@ -9,7 +9,7 @@ Use it when testing:
 3. prompt variants
 4. model-plus-workflow combinations
 
-This table is different from [BENCHMARK_RESULT_TABLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/benchmark/BENCHMARK_RESULT_TABLE.md):
+This table is different from [BENCHMARK_RESULT_TABLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/benchmark/BENCHMARK_RESULT_TABLE.md):
 
 1. `BENCHMARK_RESULT_TABLE.md` tracks task and benchmark asset status
 2. `AI_MODEL_EVAL_TABLE.md` tracks model performance across tasks
@@ -124,8 +124,8 @@ Useful slices for later analysis:
 
 This table is intended to support later additions to:
 
-1. [VAEVAS_OPENLLM_STYLE_DRAFT.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/paper/VAEVAS_OPENLLM_STYLE_DRAFT.md)
-2. [PAPER_GAP_CHECKLIST.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/paper/PAPER_GAP_CHECKLIST.md)
+1. [VAEVAS_OPENLLM_STYLE_DRAFT.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/paper/VAEVAS_OPENLLM_STYLE_DRAFT.md)
+2. [PAPER_GAP_CHECKLIST.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/paper/PAPER_GAP_CHECKLIST.md)
 
 It should eventually provide the raw data for:
 

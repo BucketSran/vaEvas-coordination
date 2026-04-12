@@ -6,15 +6,17 @@
 
 ```text
 请先阅读以下文档，并用新手能懂的话总结：
-1. vaEvas-coordination/README.md
-2. vaEvas-coordination/onboarding/NEW_MEMBER_START.md
-3. vaEvas-coordination/onboarding/ONBOARDING_CHECKLIST_TEAM.md
-4. vaEvas-coordination/docs/benchmark/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md
+1. vaEvas/coordination/README.md
+2. vaEvas/coordination/onboarding/NEW_MEMBER_START.md
+3. vaEvas/coordination/onboarding/ONBOARDING_CHECKLIST_TEAM.md
+4. vaEvas/coordination/status/2026-04-12_repo-visibility-note.md
+5. vaEvas/coordination/docs/benchmark/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md
 
 请回答我：
 1. 这个项目到底在做什么
 2. 我作为新同学最可能负责什么
 3. 我今天不应该直接做什么
+4. 如果文档里出现了本地仓库里看不到的任务名，我应该先检查什么
 ```
 
 ## Prompt 2: 检查本地 Git 是否正确

@@ -57,7 +57,7 @@ ssh <your-host-alias>
 
 1. ssh bridge：`<repo>/sshConnect/virtuoso-bridge-lite`
 2. 研发仓库：`<repo>/vaEvas`
-3. 协作仓库：`<repo>/vaEvas-coordination`
+3. 协作仓库：`<repo>/vaEvas/coordination`
 
 示例：`<repo>` 可以是 `/Users/<your-user>/Documents/TsingProject`。
 

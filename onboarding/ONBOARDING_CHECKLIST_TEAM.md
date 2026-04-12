@@ -2,7 +2,7 @@
 
 ## 1. 目标
 
-本清单用于在只提供 `vaEvas-coordination` 的情况下，仍能让新成员完整开始工作。
+本清单用于在只提供 `coordination` 的情况下，仍能让新成员完整开始工作。
 
 第一天至少完成：
 
@@ -22,7 +22,8 @@
 5. `docs/benchmark/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md`
 6. `docs/project/PROJECT_OVERVIEW.md`
 7. `docs/project/REPOSITORIES.md`
-8. `docs/benchmark/EXAMPLE_TO_BENCHMARK_WORKFLOW.md`
+8. `status/2026-04-12_repo-visibility-note.md`
+9. `docs/benchmark/EXAMPLE_TO_BENCHMARK_WORKFLOW.md`
 
 ---
 
@@ -45,10 +46,11 @@
 
 如果环境已通但仓库未定位，直接参考：
 
-1. [REPOSITORIES.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/project/REPOSITORIES.md)
-2. [2026-04-08_onboarding-path-blocker.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/status/2026-04-08_onboarding-path-blocker.md)
+1. [REPOSITORIES.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/project/REPOSITORIES.md)
+2. [2026-04-12_repo-visibility-note.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/status/2026-04-12_repo-visibility-note.md)
+3. [2026-04-08_onboarding-path-blocker.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/status/2026-04-08_onboarding-path-blocker.md)
 
-## 3. Git 初始化检查
+## 3.1 Git 初始化检查
 
 对你要参与的代码仓库（EVAS / eval / skills）逐一检查：
 

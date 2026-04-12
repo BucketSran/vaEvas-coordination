@@ -14,13 +14,13 @@ This is not the final paper text.
 
 Execution checklist for closing the paper gaps:
 
-1. [PAPER_GAP_CHECKLIST.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/paper/PAPER_GAP_CHECKLIST.md)
+1. [PAPER_GAP_CHECKLIST.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/paper/PAPER_GAP_CHECKLIST.md)
 
 ---
 
 ## 1. Abstract
 
-Large language models have recently shown strong performance on digital HDL generation, but analogous evaluation infrastructure for Verilog-A behavioral modeling remains limited. We present `vaEvas`, an EVAS-first framework for Verilog-A generation, execution, cross-simulator validation, and benchmark construction. The framework links four layers: simulator capability development in `EVAS`, benchmark task authoring in `behavioral-veriloga-eval`, modeling guidance in `veriloga-skills`, and project-level workflow coordination in `vaEvas-coordination`. Instead of treating text-only code generation as the endpoint, `vaEvas` emphasizes executable evaluation: generated models must compile, run, and satisfy behavior checks under EVAS, and closed-loop cases can be further compared against Virtuoso/Spectre under identical stimuli. We describe the current workflow from `example -> closed loop verification -> benchmark seed -> task PR`, report initial closed-loop case studies including `CPPLL` and `ADPLL`, and show how parity-driven debugging led to concrete EVAS semantic fixes such as `while` support and improved timer scheduling behavior. We also identify the missing pieces required to turn the current system into a mature community benchmark, including dataset scaling, unified scoring, baselines, and broader task coverage.
+Large language models have recently shown strong performance on digital HDL generation, but analogous evaluation infrastructure for Verilog-A behavioral modeling remains limited. We present `vaEvas`, an EVAS-first framework for Verilog-A generation, execution, cross-simulator validation, and benchmark construction. The framework links four layers: simulator capability development in `EVAS`, benchmark task authoring in `behavioral-veriloga-eval`, modeling guidance in `veriloga-skills`, and project-level workflow coordination in `coordination`. Instead of treating text-only code generation as the endpoint, `vaEvas` emphasizes executable evaluation: generated models must compile, run, and satisfy behavior checks under EVAS, and closed-loop cases can be further compared against Virtuoso/Spectre under identical stimuli. We describe the current workflow from `example -> closed loop verification -> benchmark seed -> task PR`, report initial closed-loop case studies including `CPPLL` and `ADPLL`, and show how parity-driven debugging led to concrete EVAS semantic fixes such as `while` support and improved timer scheduling behavior. We also identify the missing pieces required to turn the current system into a mature community benchmark, including dataset scaling, unified scoring, baselines, and broader task coverage.
 
 ## 2. Introduction
 
@@ -28,7 +28,7 @@ Digital HDL evaluation has recently benefited from benchmarks such as `VerilogEv
 
 Useful external references currently collected for positioning:
 
-1. [referencepaper/README.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/referencepaper/README.md)
+1. [referencepaper/README.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/referencepaper/README.md)
 
 `vaEvas` is motivated by this gap. Our goal is to build an end-to-end loop for Verilog-A:
 
@@ -74,7 +74,7 @@ The current `vaEvas` stack has four repositories:
    benchmark tasks, prompts, metadata, checks, runners, reports
 3. `veriloga-skills`
    generation guidance, domain routing, EVAS compatibility policy, modeling patterns
-4. `vaEvas-coordination`
+4. `coordination`
    workflow definition, onboarding, benchmark conversion process, documentation
 
 Together, they form a loop:
@@ -262,7 +262,7 @@ Insert a compact quantitative table with:
 
 Working table template:
 
-1. [BENCHMARK_RESULT_TABLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/benchmark/BENCHMARK_RESULT_TABLE.md)
+1. [BENCHMARK_RESULT_TABLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/benchmark/BENCHMARK_RESULT_TABLE.md)
 
 ### Blank: baseline comparison
 
@@ -276,7 +276,7 @@ Add comparison against:
 
 Working model-evaluation table:
 
-1. [AI_MODEL_EVAL_TABLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/benchmark/AI_MODEL_EVAL_TABLE.md)
+1. [AI_MODEL_EVAL_TABLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/benchmark/AI_MODEL_EVAL_TABLE.md)
 
 ## 10. Comparison to RTL-Oriented Work
 

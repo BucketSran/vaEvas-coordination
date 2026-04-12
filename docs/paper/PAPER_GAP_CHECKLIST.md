@@ -11,11 +11,11 @@ Scope:
 
 Primary draft:
 
-1. [VAEVAS_OPENLLM_STYLE_DRAFT.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/paper/VAEVAS_OPENLLM_STYLE_DRAFT.md)
+1. [VAEVAS_OPENLLM_STYLE_DRAFT.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/paper/VAEVAS_OPENLLM_STYLE_DRAFT.md)
 
 Supporting table:
 
-1. [BENCHMARK_RESULT_TABLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/benchmark/BENCHMARK_RESULT_TABLE.md)
+1. [BENCHMARK_RESULT_TABLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/benchmark/BENCHMARK_RESULT_TABLE.md)
 
 ---
 
@@ -71,7 +71,7 @@ Status: `in progress`
 
 Current support:
 
-1. [BENCHMARK_RESULT_TABLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/benchmark/BENCHMARK_RESULT_TABLE.md)
+1. [BENCHMARK_RESULT_TABLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/benchmark/BENCHMARK_RESULT_TABLE.md)
 
 Need to produce:
 
@@ -226,7 +226,7 @@ Primary cases:
 Required outputs:
 
 1. run cases
-2. fill corresponding rows in [BENCHMARK_RESULT_TABLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/benchmark/BENCHMARK_RESULT_TABLE.md)
+2. fill corresponding rows in [BENCHMARK_RESULT_TABLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/benchmark/BENCHMARK_RESULT_TABLE.md)
 3. promote at least one case to benchmark seed if feasible
 4. submit a PR
 
@@ -247,7 +247,7 @@ Primary cases:
 Required outputs:
 
 1. run cases
-2. fill corresponding rows in [BENCHMARK_RESULT_TABLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/benchmark/BENCHMARK_RESULT_TABLE.md)
+2. fill corresponding rows in [BENCHMARK_RESULT_TABLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/benchmark/BENCHMARK_RESULT_TABLE.md)
 3. promote at least one case to benchmark seed if feasible
 4. submit a PR
 
@@ -272,7 +272,7 @@ Shared responsibilities:
 
 If we want the draft to improve quickly, do these next:
 
-1. fill the currently blank rows in [BENCHMARK_RESULT_TABLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/benchmark/BENCHMARK_RESULT_TABLE.md)
+1. fill the currently blank rows in [BENCHMARK_RESULT_TABLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/benchmark/BENCHMARK_RESULT_TABLE.md)
 2. extract one compact result table into the main draft
 3. write a proper related-work subsection
 4. create one system figure and one workflow figure

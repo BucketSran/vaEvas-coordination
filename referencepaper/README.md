@@ -16,7 +16,7 @@ Current purpose:
 
 File:
 
-1. [VerilogEval_2023.pdf](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/referencepaper/VerilogEval_2023.pdf)
+1. [VerilogEval_2023.pdf](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/referencepaper/VerilogEval_2023.pdf)
 
 Why it matters:
 
@@ -32,7 +32,7 @@ Useful takeaway for `vaEvas`:
 
 File:
 
-1. [OpenLLM-RTL_2025.pdf](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/referencepaper/OpenLLM-RTL_2025.pdf)
+1. [OpenLLM-RTL_2025.pdf](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/referencepaper/OpenLLM-RTL_2025.pdf)
 
 Why it matters:
 
@@ -48,7 +48,7 @@ Useful takeaway for `vaEvas`:
 
 File:
 
-1. [RTL-Coder_2024.pdf](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/referencepaper/RTL-Coder_2024.pdf)
+1. [RTL-Coder_2024.pdf](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/referencepaper/RTL-Coder_2024.pdf)
 
 Why it matters:
 
@@ -65,7 +65,7 @@ Useful takeaway for `vaEvas`:
 
 File:
 
-1. [VGen_2022.pdf](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/referencepaper/VGen_2022.pdf)
+1. [VGen_2022.pdf](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/referencepaper/VGen_2022.pdf)
 
 Why it matters:
 

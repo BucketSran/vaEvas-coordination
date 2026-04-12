@@ -13,7 +13,7 @@
 ### Step 1: 同步顶层协作仓库
 
 ```bash
-cd /Users/bucketsran/Documents/TsingProject/vaEvas-coordination
+cd /Users/bucketsran/Documents/TsingProject/vaEvas/coordination
 git checkout main
 git pull
 ```

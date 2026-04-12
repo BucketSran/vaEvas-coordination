@@ -251,7 +251,7 @@ For comparator smoke, the benchmark landing layer should include:
 
 This layer also requires:
 
-1. add or update the row in [BENCHMARK_RESULT_TABLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/benchmark/BENCHMARK_RESULT_TABLE.md)
+1. add or update the row in [BENCHMARK_RESULT_TABLE.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/benchmark/BENCHMARK_RESULT_TABLE.md)
 2. attach result path
 3. attach PR link
 

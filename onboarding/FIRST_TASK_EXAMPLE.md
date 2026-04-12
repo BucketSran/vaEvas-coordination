@@ -26,7 +26,7 @@
 
 ### Step 1: 让 AI 先解释项目
 
-复制 [AI_PROMPT_STARTER.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/AI_PROMPT_STARTER.md) 里的 Prompt 1。
+复制 [AI_PROMPT_STARTER.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/onboarding/AI_PROMPT_STARTER.md) 里的 Prompt 1。
 
 目标：
 

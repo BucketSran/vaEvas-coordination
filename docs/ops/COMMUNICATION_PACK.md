@@ -4,21 +4,22 @@
 
 建议发送：
 
-1. [README.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/README.md)
-2. [onboarding/NEW_MEMBER_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/NEW_MEMBER_START.md)
-3. [onboarding/VIRTUOSO_EVAS_TEAM_GUIDE.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/VIRTUOSO_EVAS_TEAM_GUIDE.md)
-4. [onboarding/ONBOARDING_CHECKLIST_TEAM.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/ONBOARDING_CHECKLIST_TEAM.md)
-5. [docs/benchmark/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/benchmark/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md)
+1. [README.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/README.md)
+2. [onboarding/NEW_MEMBER_START.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/onboarding/NEW_MEMBER_START.md)
+3. [onboarding/VIRTUOSO_EVAS_TEAM_GUIDE.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/onboarding/VIRTUOSO_EVAS_TEAM_GUIDE.md)
+4. [onboarding/ONBOARDING_CHECKLIST_TEAM.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/onboarding/ONBOARDING_CHECKLIST_TEAM.md)
+5. [status/2026-04-12_repo-visibility-note.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/status/2026-04-12_repo-visibility-note.md)
+6. [docs/benchmark/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/benchmark/EVAS_VIRTUOSO_CLOSED_LOOP_BENCHMARK.md)
 
 如果对方会使用 agent，再补：
 
-1. [onboarding/AI_PROMPT_STARTER.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/onboarding/AI_PROMPT_STARTER.md)
+1. [onboarding/AI_PROMPT_STARTER.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/onboarding/AI_PROMPT_STARTER.md)
 
 ## 发给顶层管理者的最小材料包
 
 建议发送：
 
-1. [README.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/README.md)
+1. [README.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/README.md)
 2. [TEAM_PLAN.md](/Users/bucketsran/Documents/TsingProject/vaEvas/worksche/TEAM_PLAN.md)
 3. [GIT_WORKFLOW.md](/Users/bucketsran/Documents/TsingProject/vaEvas/worksche/GIT_WORKFLOW.md)
 

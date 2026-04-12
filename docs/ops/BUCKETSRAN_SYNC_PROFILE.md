@@ -14,7 +14,7 @@
 
 ## Default Sync Style
 
-以后同步 `vaEvas-coordination` 时，默认优先输出这些内容：
+以后同步 `coordination` 时，默认优先输出这些内容：
 
 1. 本周或本轮优先级有没有变化
 2. 哪个仓库该由谁推进

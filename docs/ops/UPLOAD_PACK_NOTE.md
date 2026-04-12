@@ -1,8 +1,8 @@
-# 单仓上传说明（只上传 vaEvas-coordination）
+# 单仓上传说明（只上传 coordination）
 
 ## 1. 结论
 
-如果你只上传 `vaEvas-coordination`，请优先使用本仓库内的以下文档，它们已覆盖新人接入和 EVAS↔Virtuoso 闭环执行：
+如果你只上传 `coordination`，请优先使用本仓库内的以下文档，它们已覆盖新人接入和 EVAS↔Virtuoso 闭环执行：
 
 1. `onboarding/VIRTUOSO_EVAS_TEAM_GUIDE.md`
 2. `onboarding/ONBOARDING_CHECKLIST_TEAM.md`

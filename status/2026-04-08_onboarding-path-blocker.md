@@ -19,5 +19,5 @@
 ## 下一步
 
 1. 先确认服务器上的实际路径
-2. 如果无共享目录，则按 [REPOSITORIES.md](/Users/bucketsran/Documents/TsingProject/vaEvas-coordination/docs/project/REPOSITORIES.md) 中的上游地址 clone
+2. 如果无共享目录，则按 [REPOSITORIES.md](/Users/bucketsran/Documents/TsingProject/vaEvas/coordination/docs/project/REPOSITORIES.md) 中的上游地址 clone
 3. 路径确认后再继续 bridge 和 example 验证
